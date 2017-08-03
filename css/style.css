@@ -223,7 +223,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.col-2 {
+.col-xs-6 {
   flex-basis: 40%;
 }
 
