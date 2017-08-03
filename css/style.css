@@ -177,23 +177,6 @@ body {
   line-height: 1.25rem;
 }
 
-.item-description-text-wrap {
-  padding: 0 1rem 2rem 1rem;
-}
-
-.item-description-text {
-  margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 400;
-  color: #171717;
-  font-family: Lora, serif;
-}
-
-.item-description-text-break {
-  line-height: 1.5rem;
-}
-
 .item-description-heading-lineheight {
   line-height: 1.25rem;
 }
@@ -329,4 +312,27 @@ body {
   font-size: 0.875rem;
   line-height: 17px;
   color: #171717;
+}
+
+.item-description-wrap {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  font-family: Lora;
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: #171717;
+}
+
+.item-description-text {
+  margin: 0;
+}
+
+.item-description-list {
+  margin: 0;
+  padding: 0;
+}
+
+.item-description-property {
+  display: block;
 }
