@@ -164,6 +164,14 @@ body {
   border-top: 1px solid #c6c6c6;
 }
 
+.item-description-submenu::after {
+  content: url('../images/triangle.svg');
+}
+
+.rotate-180::after {
+  transform: rotate(180deg);
+}
+
 .item-description-submenu-title {
   margin: 0;
   font-size: 1rem;
@@ -335,8 +343,4 @@ body {
 
 .item-description-property {
   display: block;
-}
-
-.rotate-180 {
-  transform: rotate(180deg);
 }
