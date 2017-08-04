@@ -228,9 +228,6 @@ body {
 
 .recommend-block-items-card {
   margin-bottom: 2rem;
-}
-
-.col-xs-6 {
   flex-basis: 40%;
 }
 
