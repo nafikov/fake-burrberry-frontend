@@ -332,15 +332,18 @@ body {
   color: #171717;
 }
 
-.item-description-text {
+.item-description-wrap p {
   margin: 0;
 }
 
-.item-description-list {
+.item-description-wrap li {
+  display: block;
+}
+
+.item-description-wrap ul {
   margin: 0;
   padding: 0;
 }
 
-.item-description-property {
-  display: block;
-}
+
+
