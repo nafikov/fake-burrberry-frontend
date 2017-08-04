@@ -209,13 +209,12 @@ body {
 }
 
 .item-other-title {
-  display: inline-block;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
-  padding-top: 0.125rem;
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-size: 1rem;
-  line-height: 1.25rem;
+  line-height: 1.125rem;
   font-weight: 400;
   color: #171717;
   border-bottom: 1px solid #171717;
@@ -261,8 +260,8 @@ body {
 }
 
 .item-other {
+  padding-top: 0.25rem;
   padding-left: 1rem;
-  /*margin-top: 1rem;*/
 }
 
 .item-other-link {
