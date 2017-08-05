@@ -214,7 +214,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .product-description-submenu {
-   border-top: none;
+    border-color:transparent;
+    padding: 1.5rem 1rem 1rem 0.5rem;
   }
 }
 
@@ -380,6 +381,12 @@ body {
   font-size: 14px;
   line-height: 1.5rem;
   color: #171717;
+}
+
+@media screen and (min-width: 768px) {
+  .product-description-wrap {
+    padding-left: 0.5rem;
+  }
 }
 
 .product-description-wrap p {
