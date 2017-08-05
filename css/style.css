@@ -43,7 +43,7 @@ body {
 .product-images {
   display: flex;
   flex-flow: row;
-  overflow-x: hidden;
+  overflow-x: auto;
   flex-shrink: 0;
 }
 
@@ -442,9 +442,9 @@ body {
 }
 
 .product-description-wrap ul {
-  margin-top: 1.5rem;
   margin: 0;
   padding: 0;
+  margin-top: 1.5rem;
 }
 
 @media only screen and (min-width: 320px) {
