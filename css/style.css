@@ -26,7 +26,7 @@ body {
   color: #111111;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .main-header-logo {
     padding: 1.5rem;
   }
@@ -217,6 +217,10 @@ body {
     border-color:transparent;
     padding: 1.5rem 1rem 1rem 0.5rem;
   }
+
+  .product-description {
+    border-bottom: none;
+  }
 }
 
 .product-description-submenu::after {
@@ -386,6 +390,7 @@ body {
 @media screen and (min-width: 768px) {
   .product-description-wrap {
     padding-left: 0.5rem;
+    margin-bottom: 1.44rem;
   }
 }
 
@@ -402,5 +407,69 @@ body {
   padding: 0;
 }
 
+@media only screen and (min-width: 320px) {
+  .hidden-xs {
+    display: none; }
+}
+
+@media only screen and (min-width: 768px) {
+  .hidden-xs {
+    display: block;
+  }
+
+  .md-hide {
+    display: none;
+  }
+}
+
+.delivery-info {
+  margin-left: -0.125rem;
+}
+.delivery-image {
+  padding-left: 0.5rem;
+  width: 432px;
+  height: 324px;
+}
+
+.delivery-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  color: #171717;
+}
+
+.delivery-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery-prop {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.delivery-prop-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #171717;
+}
+
+.delivery-prop-description {
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #171717;
+}
 
 
