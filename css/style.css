@@ -250,15 +250,11 @@ body {
 
 .recommend-block {
   padding-top: 2.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .recommend-block {
     padding-top: 0.825rem;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -267,6 +263,7 @@ body {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
   font-family: Raleway, sans-serif;
   font-size: 1rem;
   line-height: 1.175rem;
@@ -279,6 +276,7 @@ body {
   .recommend-block-title {
     margin-bottom: 1rem;
     padding-bottom: 0.4375rem;
+    padding-left: 0;
     line-height: 1.1875rem;
   }
 }
@@ -366,11 +364,11 @@ body {
 }
 
 .footer {
-  padding: 2rem 1rem;
+  padding: 2rem 0.5rem;
   background-color: #f3f3f3;
 }
 
-.footer-button {
+.footer-user-settings {
   display: block;
   margin-bottom: 1rem;
   border: none;
@@ -381,6 +379,18 @@ body {
   line-height: 1rem;
   background-color: #f3f3f3;
   color: #999999;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-user-settings {
+    display: inline-block;
+    margin-right: 1.25rem;
+    margin-bottom: 0;
+  }
 }
 
 .footer-title-help {
@@ -501,4 +511,41 @@ body {
   color: #171717;
 }
 
+.footer-menu {
+  margin-bottom: 1.125rem;
+}
 
+.footer-menu-title {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #171717;
+}
+
+.footer-menu-prop {
+  display: block;
+  margin-bottom: 0.75rem;
+  margin-right: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: #999999;
+  text-decoration: none;
+}
+
+.footer-menu-link:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 0;
+  }
+
+  .footer-menu-title {
+    line-height: 0.875rem;
+  }
+}
