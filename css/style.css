@@ -26,6 +26,20 @@ body {
   color: #111111;
 }
 
+@media screen and (min-width: 48rem) {
+  .main-header-logo {
+    padding: 1.5rem;
+  }
+
+  .product-title {
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
 .product-images {
   display: flex;
   flex-flow: row;
