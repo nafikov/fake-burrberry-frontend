@@ -48,6 +48,10 @@ body {
   margin: 0 -0.5rem;
 }
 
+.product__gallery::-webkit-scrollbar {
+  height: 0;
+}
+
 .product__gallery-item {
   width: 300px;
   height: 400px;
@@ -213,6 +217,10 @@ body {
   border-top: 1px solid #c6c6c6;
 }
 
+.product__descr-submenu::after {
+  content: url('../images/triangle.svg');
+}
+
 @media screen and (min-width: 768px) {
   .product__descr-submenu {
     border-color:transparent;
@@ -222,10 +230,10 @@ body {
   .product__descr {
     border-bottom: none;
   }
-}
 
-.product__descr-submenu::after {
-  content: url('../images/triangle.svg');
+  .product__descr-submenu::after {
+    content: '';
+  }
 }
 
 .rotate-180::after {
