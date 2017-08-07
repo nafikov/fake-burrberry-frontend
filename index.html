@@ -11,116 +11,219 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<header class="main-header">
-  <a href="#"><img src="images/logo.svg" class="main-header-logo" alt="logo"></a>
+<header class="header">
+  <a href="#"><img src="images/logo.svg" class="header__logo" alt="logo"></a>
 </header>
 
 <main>
-  <div class="product">
-    <h1 class="product-title">Long Cotton Gabardine Car Coat</h1>
-  </div>
-
-  <div class="product-images">
-    <img class="product-image" src="images/product-image-1.png" alt="product-image-1">
-    <img class="product-image" src="images/product-image-2.png" alt="product-image-2">
-    <img class="product-image" src="images/product-image-3.png" alt="product-image-3">
-    <img class="product-image" src="images/product-image-4.png" alt="product-image-4">
-  </div>
-
-  <div class="product-info">
-
-    <div class="product-info-wrap">
-      <h1 class="product-info-price">110 000 руб</h1>
-      <p class="product-info-article">Item 39428531</p>
+  <div class="container">
+    <div class="product">
+      <h1 class="product__title">Long Cotton Gabardine Car Coat</h1>
     </div>
 
-    <p class="product-info-color">Colour: Honey</p>
+    <div class="row">
+      <div class="col-xs-12 col-sm-7">
+        <div class="product__gallery">
+          <img class="product__gallery-item" src="images/product-image-1@2x.png" alt="product-image-1">
+          <img class="product__gallery-item" src="images/product-image-2@2x.png" alt="product-image-2">
+          <img class="product__gallery-item" src="images/product-image-3@2x.png" alt="product-image-3">
+          <img class="product__gallery-item" src="images/product-image-4@2x.png" alt="product-image-4">
+        </div>
+      </div>
 
-    <div class="product-color-picker-wrap">
-      <button class="product-color-btn bg-color-black" type="button" title="color: Black"></button>
-      <button class="product-color-btn product-color-btn-active bg-color-orange" type="button" title="color: Honey"></button>
-    </div>
+      <div class="col-xs-12 col-sm-5">
+        <div class="product__info">
 
-    <div class="product-action-button">
-      <button class="product-action-button-size" type="button">SELECT A SIZE</button>
-      <button class="product-action-button-find" type="button">FIND IN STORE</button>
-    </div>
+          <div class="product__info-wrap">
+            <h2 class="product__info-price">110 000 руб</h2>
+            <p class="product__info-article">Item 39428531</p>
+          </div>
 
-    <button class="product-info-button-help" type="button">NEED SIZE HELP?</button>
-  </div>
+          <p class="product__info-color">Colour: Honey</p>
 
-  <div class="product-description">
-    <div class="product-description-submenu rotate-180">
-      <h2 class="product-description-submenu-title ">DESCRIPTION</h2>
-    </div>
+          <div class="product__color-picker">
+            <button class="product__color-btn bg-color-black" type="button" title="color: Black">color: Black</button>
+            <button class="product__color-btn product__color-btn-active bg-color-orange" type="button"
+                    title="color: Honey">color: Honey</button>
+          </div>
 
-    <div class="product-description-wrap">
-      <p>A refined car coat crafted in protective cotton gabardine.</p>
-      <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric that protects against wind and rain.</p>
-      <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
-      <p>The piece is finished with a distinctive check undercollar.</p>
-      <br>
-      <ul>
-        <li>Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly according to size.</li>
-        <li>Outer: 100% cotton</li>
-        <li>Check lining: 100% cotton</li>
-        <li>Sleeve lining: 100% viscose</li>
-        <li>Buttons: buffalo horn</li>
-        <li>Specialist dry clean</li>
-        <li>Made in Europe</li>
-        <li>Item 39428531</li>
-      </ul>
-    </div>
+          <div class="product__action">
+            <button class="product__action-size-btn" type="button">SELECT A SIZE</button>
+            <button class="product__action-find-btn" type="button">FIND IN STORE</button>
+          </div>
 
-    <div class="product-description-submenu">
-      <h2 class="product-description-submenu-title item-description-heading-lineheight">SHIPPING &amp; RETURNS</h2>
+          <button class="product__action-help-btn" type="button">NEED SIZE HELP?</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="recommend-block">
-    <h2 class="recommend-block-title">WE RECOMMEND</h2>
-    <div class="recommend-block-items">
-      <a class="recommend-block-items-card">
-        <img class="recommend-block-items-card-img" src="images/item-001.jpg" alt="recommend-item-1">
-        <h3 class="recommend-block-items-card-name">Emroided Hooded</h3>
-        <h5 class="recommend-block-items-card-price">27 000 руб</h5>
-      </a>
+    <div class="container">
+      <div class="product__descr">
+        <div class="product__descr-submenu rotate-180">
+          <h2 class="product__descr-title ">DESCRIPTION</h2>
+        </div>
 
-      <a class="recommend-block-items-card">
-        <img class="recommend-block-items-card-img" src="images/item-002.jpg" alt="recommend-item-3">
-        <h3 class="recommend-block-items-card-name">Relaxed Fit Stretch Jeans</h3>
-        <h5 class="recommend-block-items-card-price">22 500 руб</h5>
-      </a>
+        <div class="product__descr-wrap">
+          <p>A refined car coat crafted in protective cotton gabardine.</p>
+          <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric that protects
+            against wind and rain.</p>
+          <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
+          <p>The piece is finished with a distinctive check undercollar.</p>
+          <ul>
+            <li>Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly according to size.
+            </li>
+            <li>Outer: 100% cotton</li>
+            <li>Check lining: 100% cotton</li>
+            <li>Sleeve lining: 100% viscose</li>
+            <li>Buttons: buffalo horn</li>
+            <li>Specialist dry clean</li>
+            <li>Made in Europe</li>
+            <li>Item 39428531</li>
+          </ul>
+        </div>
 
-      <a class="recommend-block-items-card">
-        <img class="recommend-block-items-card-img" src="images/item-003.jpg" alt="recommend-item-3">
-        <h3 class="recommend-block-items-card-name">Leather and House Check</h3>
-        <h5 class="recommend-block-items-card-price">120 000 руб</h5>
-      </a>
+        <div class="product__descr-submenu hidden-md">
+          <h2 class="product__descr-title">SHIPPING &amp; RETURNS</h2>
+        </div>
+      </div>
+    </div>
 
-      <a class="recommend-block-items-card">
-        <img class="recommend-block-items-card-img" src="images/item-004.jpg" alt="recommend-item-4">
-        <h3 class="recommend-block-items-card-name">Leather Wingtip Check</h3>
-        <h5 class="recommend-block-items-card-price">46 000 руб</h5>
-      </a>
+  <div class="delivery hidden-xs">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-7">
+          <img class="delivery__image" src="images/delivery.png" alt="delivery-image">
+        </div>
+
+        <div class="col-sm-5">
+          <div class="delivery__info">
+            <h2 class="delivery__title">DELIVERY</h2>
+            <div class="delivery__list">
+              <div class="delivery__prop">
+                <h3 class="delivery__prop-title">Free Next Day Delivery</h3>
+                <div class="delivery__prop-descr">Order before 7pm Monday to Thursday for delivery the next day</div>
+              </div>
+              <div class="delivery__prop">
+                <h3 class="delivery__prop-title">Collect-in-Store</h3>
+                <div class="delivery__prop-descr">Order online today and pick up your items in store as early as
+                  tomorrow
+                </div>
+              </div>
+              <div class="delivery__prop">
+                <h3 class="delivery__prop-title">Free Returns</h3>
+                <div class="delivery__prop-descr">Enjoy free returns on your order</div>
+              </div>
+              <div class="delivery__prop">
+                <h3 class="delivery__prop-title">Free Gift Packaging</h3>
+                <div class="delivery__prop-descr">Discover our gift packaging, a gold lined box tied with a coloured
+                  ribbon
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="recommend">
+    <div class="container">
+      <h2 class="recommend__title">WE RECOMMEND</h2>
+      <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <a class="recommend__card">
+            <img class="recommend__card-image" src="images/item-001.jpg" alt="recommend-item-1">
+            <h3 class="recommend__card-name">Emroided Hooded</h3>
+            <h5 class="recommend__card-price">27 000 руб</h5>
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a class="recommend__card">
+            <img class="recommend__card-image" src="images/item-002.jpg" alt="recommend-item-3">
+            <h3 class="recommend__card-name">Relaxed Fit Stretch Jeans</h3>
+            <h5 class="recommend__card-price">22 500 руб</h5>
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a class="recommend__card">
+            <img class="recommend__card-image" src="images/item-003.jpg" alt="recommend-item-3">
+            <h3 class="recommend__card-name">Leather and House Check</h3>
+            <h5 class="recommend__card-price">120 000 руб</h5>
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <a class="recommend__card">
+            <img class="recommend__card-image" src="images/item-004.jpg" alt="recommend-item-4">
+            <h3 class="recommend__card-name">Leather Wingtip Check</h3>
+            <h5 class="recommend__card-price">46 000 руб</h5>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="item-other">
-    <h2 class="item-other-title">MORE FOR YOU</h2>
-    <div class="item-other-links">
-      <a class="item-other-link" href="#">Men’s Black Trench Coats</a>
-      <a class="item-other-link" href="#">Men’s Short Trench Coats</a>
-      <a class="item-other-link" href="#">Men’s Long Trench Coats</a>
+  <div class="other-goods hidden-md">
+    <h2 class="other-goods__title">MORE FOR YOU</h2>
+    <div class="other-goods__links">
+      <a class="other-goods__link" href="#">Men’s Black Trench Coats</a>
+      <a class="other-goods__link" href="#">Men’s Short Trench Coats</a>
+      <a class="other-goods__link" href="#">Men’s Long Trench Coats</a>
     </div>
   </div>
 </main>
 
 <footer class="footer">
-  <button class="footer-button" type="button">Shipping country: Russian Federation</button>
-  <button class="footer-button" type="button">Language: English</button>
-  <h4 class="footer-title-help">Need help?</h4>
-  <a class="footer-link-contacts" href="#">Find out more and contact us</a>
+  <div class="footer__menu hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <nav>
+            <h2 class="footer__menu-section">Customer service</h2>
+            <a class="footer__menu-item" href="#">Contact Us</a>
+            <a class="footer__menu-item" href="#">Payment</a>
+            <a class="footer__menu-item" href="#">Shipping</a>
+            <a class="footer__menu-item" href="#">Returns</a>
+            <a class="footer__menu-item" href="#">Faqs</a>
+            <a class="footer__menu-item" href="#">Live Chat</a>
+            <a class="footer__menu-item" href="#">The Burberry App</a>
+            <a class="footer__menu-item" href="#">Store Locator</a>
+          </nav>
+        </div>
+        <div class="col-sm-3">
+          <nav>
+            <h2 class="footer__menu-section">Our company</h2>
+            <a class="footer__menu-item" href="#">Our History</a>
+            <a class="footer__menu-item" href="#">Burberry Group Plc</a>
+            <a class="footer__menu-item" href="#">Careers</a>
+            <a class="footer__menu-item" href="#">Corporate Responsibility</a>
+            <a class="footer__menu-item" href="#">Site Map</a>
+          </nav>
+        </div>
+        <div class="col-sm-4">
+          <nav>
+            <h2 class="footer__menu-section">Legal & cookies</h2>
+            <a class="footer__menu-item" href="#">Terms & Conditions</a>
+            <a class="footer__menu-item" href="#">Privacy Policy</a>
+            <a class="footer__menu-item" href="#">Cookie Policy</a>
+            <a class="footer__menu-item" href="#">Accessibility Statement</a>
+            <a class="footer__menu-item" href="#">Japan Only - SCTL indications</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <button class="footer__user-selection" type="button">Shipping country: Russian Federation</button>
+    <button class="footer__user-selection" type="button">Language: English</button>
+  </div>
+
+  <h4 class="footer__help hidden-md">Need help?</h4>
+  <a class="footer__contacts hidden-md" href="#">Find out more and contact us</a>
 </footer>
 </body>
 </html>
