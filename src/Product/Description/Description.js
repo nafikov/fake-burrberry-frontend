@@ -51,6 +51,9 @@ export default function () {
 
       <DescContent/>
 
+      <DescSubmenu>
+        <DescTitle>SHIPPING &amp; RETURNS</DescTitle>
+      </DescSubmenu>
     </Description>
   )
 }
