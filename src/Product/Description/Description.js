@@ -86,7 +86,7 @@ export default function () {
           <Desctop>
             <div className="col-lg-8">
               <Image
-                src="img/product-image-4@2x.png"
+                src="img/product-image-5@2x.png"
                 alt="Product Image 2"
               />
             </div>
