@@ -6,6 +6,14 @@ import Details from './Details/Details'
 import Description from './Description/Description';
 import Delivery from './Delivery/Delivery';
 import Recommend from './Recommend/Recommend';
+import More from './More';
+import DesctopGallery from './Gallery/DesctopGallery';
+import Responsive from 'react-responsive';
+
+const Desctop = ({ children }) =>
+  <Responsive minWidth={992} children={children} />;
+const Mobile = ({ children }) =>
+  <Responsive maxWidth={991} children={children} />;
 
 export default function () {
   return (
@@ -29,9 +37,15 @@ export default function () {
 
       <Description/>
 
+      <Desctop>
+        <DesctopGallery/>
+      </Desctop>
+
       <Delivery/>
 
       <Recommend/>
+
+      <More/>
 
     </main>
   )

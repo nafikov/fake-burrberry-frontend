@@ -35,7 +35,11 @@ const Description = styled.div`
   color: #171717;
 `;
 
-const InformationWrap = styled.div``;
+const InformationWrap = styled.div`
+  @media screen and (min-width: 992px) {
+    margin-left
+  }
+`;
 
 export default function () {
   return (
