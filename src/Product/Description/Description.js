@@ -41,6 +41,10 @@ const DescSubmenu = styled.div`
       content: '';
     }
   }
+  
+  @media screen and (min-width: 992px) {
+    padding-top: 0;
+  }
 `;
 
 const Wrap = styled.div`
@@ -72,9 +76,11 @@ export default function () {
 
               <DescContent/>
 
-              <DescSubmenu>
-                <DescTitle>SHIPPING &amp; RETURNS</DescTitle>
-              </DescSubmenu>
+              <Mobile>
+                <DescSubmenu>
+                  <DescTitle>SHIPPING &amp; RETURNS</DescTitle>
+                </DescSubmenu>
+              </Mobile>
             </Description>
           </div>
           <Desctop>

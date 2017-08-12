@@ -10,6 +10,11 @@ const Footer = styled.footer`
   @media (min-width: 768px) {
     padding: 2rem 1rem;
   }
+  
+  @media (min-width: 992px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
   `;
 
 const FooterMenu = styled.div`
