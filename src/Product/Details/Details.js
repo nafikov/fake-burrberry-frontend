@@ -86,7 +86,7 @@ export default function () {
 
       <ColorPicker>
         <ButtonColor bgColor="#232122" label="Black"/>
-        <ButtonColor bgColor="#cfa880" label="Honey"/>
+        <ButtonColor bgColor="#cfa880" label="Honey" active/>
       </ColorPicker>
 
       <ActionWrap>

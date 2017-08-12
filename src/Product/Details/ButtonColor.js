@@ -7,15 +7,14 @@ const Button = styled.button`
   height: 40px;
   border-radius: 50%;
   border: none;
-  border: 1px solid transparent;
   font-size: 0;
-  
+  border: solid 1px ${props => (props.active ? "#232122" : "transparent")};
   background-color: ${props => props.bgColor};
 `;
 
 export default function (props) {
   return (
-    <Button bgColor={props.bgColor}>
+    <Button bgColor={props.bgColor} active={props.active}>
       color: {props.label}
     </Button>
   )

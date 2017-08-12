@@ -20,7 +20,7 @@ const DescSubmenu = styled.div`
   
     ::after {
       content: url(${triangle});
-      // ${props => (props.active ? 'transform: rotate(180deg);' : '')};
+      ${props => (props.active ? 'transform: rotate(180deg);' : '')};
     }
   
   @media screen and (min-width: 768px) {
@@ -46,7 +46,7 @@ export default function () {
   return (
     <div className="container">
       <Description>
-        <DescSubmenu>
+        <DescSubmenu active>
           <DescTitle>DESCRIPTION</DescTitle>
         </DescSubmenu>
 
