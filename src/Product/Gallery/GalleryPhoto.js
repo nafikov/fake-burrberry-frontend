@@ -8,7 +8,7 @@ const Item = styled.img`
   @media screen and (min-width: 768px) {
     height: 576px;
   }
-`
+`;
 
 export default function GalleryPhoto(props) {
   return (

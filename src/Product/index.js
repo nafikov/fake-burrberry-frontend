@@ -3,6 +3,7 @@ import Title from './Title';
 import Gallery from './Gallery/Gallery';
 import Details from './Details/Details'
 import Description from './Description/Description';
+import Delivery from './Delivery/Delivery';
 
 export default function () {
   return (
@@ -22,6 +23,8 @@ export default function () {
       <div className="container">
         <Description/>
       </div>
+
+      <Delivery/>
 
 
     </main>
