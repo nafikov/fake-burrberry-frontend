@@ -21,6 +21,12 @@ const Button = styled.button`
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+  
+  @media screen and (min-width: 992px) {
+    margin-right: 1rem;
+    width: 100%
+    
+  }
 `;
 
 export default function (props) {

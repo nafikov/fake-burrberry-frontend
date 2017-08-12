@@ -36,19 +36,16 @@ const Description = styled.div`
 `;
 
 const InformationWrap = styled.div`
-  @media screen and (min-width: 992px) {
-    margin-left
-  }
 `;
 
 export default function () {
   return (
-    <InformationWrap>
+    <div>Order before 7pm Monday to Thursday for delivery the next day
       <Header>DELIVERY</Header>
 
       <DeliveryFeature>
         <Title>Free Next Day Delivery</Title>
-        <Description>Order before 7pm Monday to Thursday for delivery the next day</Description>
+        <Description></Description>
       </DeliveryFeature>
 
       <DeliveryFeature>
@@ -66,7 +63,7 @@ export default function () {
         <Description>Discover our gift packaging, a gold lined box tied with a coloured ribbon</Description>
       </DeliveryFeature>
 
-    </InformationWrap>
+    </div>
   )
 
 }

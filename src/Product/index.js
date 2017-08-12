@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
+import styled from 'styled-components';
 import Title from './Title';
 import Gallery from './Gallery/Gallery';
 import Details from './Details/Details'
@@ -15,25 +15,54 @@ const Desctop = ({ children }) =>
 const Mobile = ({ children }) =>
   <Responsive maxWidth={991} children={children} />;
 
+const View = styled.div`
+  @media (min-width: 992px) {
+    margin-bottom: 4rem;
+    background-color: #d4bdad;
+  }
+`;
+
+const MainImage = styled.img`
+  display: flex;
+  width: 488px;
+  height: 651px;
+  margin: 0 -0.5rem;
+`;
+
 export default function () {
   return (
     <main>
-      <Helmet>
-        <title>
-          Long Cotton Gabardine Car Coat | Men - Burberry"
-        </title>
-      </Helmet>
-      <div className="container">
-        <Title label="Long Cotton Gabardine Car Coat"/>
-        <div className="row">
-          <div className="col-xs-12 col-sm-7">
-            <Gallery/>
-          </div>
-          <div className="col-xs-12 col-sm-5">
-            <Details/>
+
+      <View>
+        <div className="container">
+          <Mobile>
+            <Title label="Long Cotton Gabardine Car Coat"/>
+          </Mobile>
+
+          <div className="row middle-lg">
+            <div className="col-xs-12 col-md-7 col-lg-6">
+              <Mobile>
+                <Gallery/>
+              </Mobile>
+
+              <Desctop>
+                <MainImage
+                  src="img/product-image-1@2x.png"
+                  alt="Product Image"
+                />
+              </Desctop>
+
+            </div>
+            <div className="col-xs-12 col-md-5 col-lg-6">
+              <Desctop>
+                <Title label="Long Cotton Gabardine Car Coat Coat Coat Coat Coat"/>
+              </Desctop>
+
+              <Details/>
+            </div>
           </div>
         </div>
-      </div>
+      </View>
 
       <Description/>
 

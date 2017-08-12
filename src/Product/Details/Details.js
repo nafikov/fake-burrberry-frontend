@@ -1,7 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import Responsive from 'react-responsive';
 import ButtonAction from './ButtonAction';
 import ButtonColor from './ButtonColor';
+import Info from './Info';
+import Size from './Size';
+import Help from './Help';
+
+
+const Desctop = ({ children }) =>
+  <Responsive minWidth={992} children={children} />;
+const Mobile = ({ children }) =>
+  <Responsive maxWidth={991} children={children} />;
 
 const Details = styled.div`
   padding: 1rem 1rem 0rem 1rem;
@@ -11,39 +21,23 @@ const Details = styled.div`
   }
 `;
 
-const Info = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-`;
-
-const InfoPrice = styled.h2`
-  display: inline-block;
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-  color: #111111;
-`;
-
-const InfoArticle = styled.p`
-  display: inline-block;
-  margin: 0;
-  font-family: Raleway, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 300;
-  line-height: 1rem;
-  color: #171717;
-`;
-
-const InfoColor = styled.p`
+const Color = styled.p`
   margin: 0;
   font-size: 0.75rem;
   line-height: 0.875rem;
   font-weight: 300;
   color: #171717;
+`;
+
+const ColorValue = styled.span`
+  font-weight: 700;
+`;
+
+const Select = styled.div`
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    }
 `;
 
 const ColorPicker = styled.div`
@@ -52,6 +46,10 @@ const ColorPicker = styled.div`
   padding-top: 1rem;
   padding-bottom: 2rem;
   margin-top: 1px;
+  
+  @media (min-width: 992px) {
+    border-bottom: none;
+    }
 `;
 
 const ActionWrap = styled.div`
@@ -60,41 +58,74 @@ const ActionWrap = styled.div`
   flex-direction: column;
 `;
 
-const HelpButton = styled.button`
-  display: block;
-  margin: 0;
-  margin-bottom: 3rem;
+const ColumnWrap = styled.div`
+@media (min-width: 992px) {
+    width: 50%;
+    margin-right: 1rem;
+  }
+`;
+
+const DeliveryInfo = styled.div`
+margin-top: 0.5rem;
+`;
+
+const DeliveryTitle = styled.h3`
+margin: 0;
   padding: 0;
-  border: none;
-  background-color: #ffffff;
-  font-family: Raleway, sans-serif;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
   font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #171717;
+`;
+
+const DeliveryDescription = styled.div`
+font-size: 0.75rem;
   line-height: 1rem;
-  font-weight: 400;
   color: #171717;
 `;
 
 export default function () {
   return (
     <Details>
-      <Info>
-        <InfoPrice>110 000 руб</InfoPrice>
-        <InfoArticle>Item 39428531</InfoArticle>
-      </Info>
 
-      <InfoColor>Colour: Honey</InfoColor>
+      <Info/>
 
-      <ColorPicker>
-        <ButtonColor bgColor="#232122" label="Black"/>
-        <ButtonColor bgColor="#cfa880" label="Honey" active/>
-      </ColorPicker>
+      <Select>
+        <ColumnWrap>
+          <Color>Colour: <ColorValue>Honey</ColorValue></Color>
+          <ColorPicker>
+            <ButtonColor bgColor="#232122" label="Black"/>
+            <ButtonColor bgColor="#cfa880" label="Honey" active/>
+          </ColorPicker>
+          <Desctop>
+            <ButtonAction type="button" borderColor="#171717" fontColor="#ffffff" bgColor="#171717" label="ADD TO BAG"/>
+          </Desctop>
+        </ColumnWrap>
+        <Desctop>
+          <Size />
+        </Desctop>
+      </Select>
 
-      <ActionWrap>
-        <ButtonAction type="button" borderColor="#171717" fontColor="#ffffff" bgColor="#171717" label="SELECT A SIZE"/>
-        <ButtonAction type="button" borderColor="#999999" fontColor="#171717" bgColor="#ffffff" label="FIND IN STORE"/>
-      </ActionWrap>
+      <Desctop>
+        <DeliveryInfo>
+          <DeliveryTitle>Free Next Day Delivery</DeliveryTitle>
+          <DeliveryDescription>Order before 7pm Monday to Thursday for delivery the next day</DeliveryDescription>
+        </DeliveryInfo>
+      </Desctop>
 
-      <HelpButton>NEED SIZE HELP?</HelpButton>
+      <Mobile>
+        <ActionWrap>
+          <ButtonAction type="button" borderColor="#171717" fontColor="#ffffff" bgColor="#171717" label="SELECT A SIZE"/>
+          <ButtonAction type="button" borderColor="#999999" fontColor="#171717" bgColor="#ffffff" label="FIND IN STORE"/>
+        </ActionWrap>
+      </Mobile>
+
+
+
+      <Mobile>
+        <Help/>
+      </Mobile>
     </Details>
   )
 }
