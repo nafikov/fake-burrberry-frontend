@@ -44,16 +44,18 @@ const DescTitle = styled.h2`
 
 export default function () {
   return (
-    <Description>
-      <DescSubmenu>
-        <DescTitle>DESCRIPTION</DescTitle>
-      </DescSubmenu>
+    <div className="container">
+      <Description>
+        <DescSubmenu>
+          <DescTitle>DESCRIPTION</DescTitle>
+        </DescSubmenu>
 
-      <DescContent/>
+        <DescContent/>
 
-      <DescSubmenu>
-        <DescTitle>SHIPPING &amp; RETURNS</DescTitle>
-      </DescSubmenu>
-    </Description>
+        <DescSubmenu>
+          <DescTitle>SHIPPING &amp; RETURNS</DescTitle>
+        </DescSubmenu>
+      </Description>
+    </div>
   )
 }
