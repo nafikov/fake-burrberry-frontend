@@ -8,6 +8,14 @@ const Wrap = styled.div`
   @media screen and (min-width: 768px) {
     padding-top: 0.825rem;
   }
+  
+  @media screen and (min-width: 992px) {
+      h2 {
+        display: block;
+        margin-top: 2.25rem;
+        text-align: center;
+      }
+    }
 `;
 
 const Header = styled.h2`
@@ -27,6 +35,10 @@ const Header = styled.h2`
     padding-bottom: 0.4375rem;
     padding-left: 0;
     line-height: 1.1875rem;
+  }
+  
+  @media screen and (min-width: 992px) {
+    border-bottom: none;
   }
 `;
 

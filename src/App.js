@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from "react-helmet";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Product from './Product/'
@@ -7,6 +8,11 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>
+            Long Cotton Gabardine Car Coat | Men - Burberry"
+          </title>
+        </Helmet>
         <Header/>
         <Product/>
         <Footer/>
