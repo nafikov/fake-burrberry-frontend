@@ -1,20 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
-import Help from './Help';
-import ButtonAction from './ButtonAction';
+import React from "react";
+import styled from "styled-components";
+import Help from "./Help";
+import ButtonAction from "./ButtonAction";
 
 const Size = styled.div`
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
 
-@media (min-width: 992px) {
+  @media (min-width: 992px) {
     width: 50%;
   }
 `;
 
 const Wrap = styled.div`
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const Text = styled.p`
@@ -25,9 +25,7 @@ const Text = styled.p`
   color: #171717;
 `;
 
-const SizeValue = styled.span`
-  font-weight: 700;`
-;
+const SizeValue = styled.span`font-weight: 700;`;
 
 const Options = styled.div`
   display: flex;
@@ -41,7 +39,7 @@ const Option = styled.button`
   border-radius: 2px;
   border: solid 1px #171717;
   background-color: inherit;
-  font-weight: ${props => (props.active ? 'bold' : 'normal')};
+  font-weight: ${props => (props.active ? "bold" : "normal")};
   font-size: 0.75rem;
   line-height: 1.33;
   &:last-child {
@@ -52,25 +50,26 @@ const Option = styled.button`
 export default props =>
   <Size>
     <Wrap>
-      <Text>Size: <SizeValue>XL</SizeValue></Text>
-      <Help/>
+      <Text>
+        Size: <SizeValue>XL</SizeValue>
+      </Text>
+      <Help />
     </Wrap>
 
-
     <Options>
-      <Option type="button">
-        S
-      </Option>
-      <Option type="button">
-        M
-      </Option>
-      <Option type="button">
-        L
-      </Option>
+      <Option type="button">S</Option>
+      <Option type="button">M</Option>
+      <Option type="button">L</Option>
       <Option type="button" active>
         XL
       </Option>
     </Options>
 
-    <ButtonAction type="button" borderColor="#171717" fontColor="#171717" bgColor="#d4bdad" label="FIND IN STORE"/>
+    <ButtonAction
+      type="button"
+      borderColor="#171717"
+      fontColor="#171717"
+      bgColor="#d4bdad"
+      label="FIND IN STORE"
+    />
   </Size>;

@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Wrap = styled.div`
   padding-top: 0.25rem;
   padding-left: 1rem;
-  
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -20,11 +20,9 @@ const Title = styled.h2`
   font-weight: 400;
   color: #171717;
   border-bottom: 1px solid #171717;
-`
+`;
 
-const Links = styled.div`
-  margin-bottom: 4rem;
-`
+const Links = styled.div`margin-bottom: 4rem;`;
 
 const Link = styled.a`
   display: block;
@@ -36,7 +34,7 @@ const Link = styled.a`
   font-weight: 400;
   text-decoration: none;
   color: #171717;
-`
+`;
 
 const More = () => {
   return (
@@ -48,7 +46,7 @@ const More = () => {
         <Link href="#">Men’s Long Trench Coats</Link>
       </Links>
     </Wrap>
-  )
-}
+  );
+};
 
 export default More;

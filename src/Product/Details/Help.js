@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const HelpButton = styled.button`
   display: block;
@@ -13,7 +13,7 @@ const HelpButton = styled.button`
   line-height: 1rem;
   font-weight: 400;
   color: #171717;
-  
+
   @media screen and (min-width: 992px) {
     background-color: inherit;
     margin-bottom: 0;
@@ -21,9 +21,7 @@ const HelpButton = styled.button`
 `;
 
 const Help = () => {
-  return (
-    <HelpButton>NEED SIZE HELP?</HelpButton>
-  )
-}
+  return <HelpButton>NEED SIZE HELP?</HelpButton>;
+};
 
 export default Help;

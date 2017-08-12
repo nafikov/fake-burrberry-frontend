@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import triangle from '../../files/triangle.svg';
-import DescContent from './DescContent';
-import Responsive from 'react-responsive';
+import React from "react";
+import styled from "styled-components";
+import triangle from "../../files/triangle.svg";
+import DescContent from "./DescContent";
+import Responsive from "react-responsive";
 
 const Desctop = ({ children }) =>
   <Responsive minWidth={992} children={children} />;
@@ -12,7 +12,7 @@ const Mobile = ({ children }) =>
 const Description = styled.div`
   margin: 0;
   border-bottom: 1px solid #c6c6c6;
-  
+
   @media screen and (min-width: 768px) {
     border-bottom: none;
   }
@@ -27,21 +27,21 @@ const DescSubmenu = styled.div`
   justify-content: space-between;
   padding: 2rem 1rem;
   border-top: 1px solid #c6c6c6;
-  
-    ::after {
-      content: url(${triangle});
-      ${props => (props.active ? 'transform: rotate(180deg);' : '')};
-    }
-  
+
+  ::after {
+    content: url(${triangle});
+    ${props => (props.active ? "transform: rotate(180deg);" : "")};
+  }
+
   @media screen and (min-width: 768px) {
-    border-color:transparent;
+    border-color: transparent;
     padding: 1.5rem 1rem 1rem 0;
-    
+
     ::after {
       content: '';
     }
   }
-  
+
   @media screen and (min-width: 992px) {
     padding-top: 0;
   }
@@ -63,7 +63,7 @@ const DescTitle = styled.h2`
   color: #171717;
 `;
 
-export default function () {
+export default function() {
   return (
     <Wrap>
       <div className="container">
@@ -74,7 +74,7 @@ export default function () {
                 <DescTitle>DESCRIPTION</DescTitle>
               </DescSubmenu>
 
-              <DescContent/>
+              <DescContent />
 
               <Mobile>
                 <DescSubmenu>
@@ -85,15 +85,11 @@ export default function () {
           </div>
           <Desctop>
             <div className="col-lg-8">
-              <Image
-                src="img/product-image-5@2x.png"
-                alt="Product Image 2"
-              />
+              <Image src="img/product-image-5@2x.png" alt="Product Image 2" />
             </div>
           </Desctop>
-
         </div>
       </div>
     </Wrap>
-  )
+  );
 }

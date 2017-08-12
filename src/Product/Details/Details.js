@@ -1,12 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import Responsive from 'react-responsive';
-import ButtonAction from './ButtonAction';
-import ButtonColor from './ButtonColor';
-import Info from './Info';
-import Size from './Size';
-import Help from './Help';
-
+import React from "react";
+import styled from "styled-components";
+import Responsive from "react-responsive";
+import ButtonAction from "./ButtonAction";
+import ButtonColor from "./ButtonColor";
+import Info from "./Info";
+import Size from "./Size";
+import Help from "./Help";
 
 const Desctop = ({ children }) =>
   <Responsive minWidth={992} children={children} />;
@@ -15,7 +14,7 @@ const Mobile = ({ children }) =>
 
 const Details = styled.div`
   padding: 1rem 1rem 0rem 1rem;
-  
+
   @media screen and (min-width: 768px) {
     padding: 0;
   }
@@ -29,15 +28,13 @@ const Color = styled.p`
   color: #171717;
 `;
 
-const ColorValue = styled.span`
-  font-weight: 700;
-`;
+const ColorValue = styled.span`font-weight: 700;`;
 
 const Select = styled.div`
   @media (min-width: 992px) {
     display: flex;
     justify-content: space-between;
-    }
+  }
 `;
 
 const ColorPicker = styled.div`
@@ -46,10 +43,10 @@ const ColorPicker = styled.div`
   padding-top: 1rem;
   padding-bottom: 2rem;
   margin-top: 1px;
-  
+
   @media (min-width: 992px) {
     border-bottom: none;
-    }
+  }
 `;
 
 const ActionWrap = styled.div`
@@ -59,18 +56,16 @@ const ActionWrap = styled.div`
 `;
 
 const ColumnWrap = styled.div`
-@media (min-width: 992px) {
+  @media (min-width: 992px) {
     width: 50%;
     margin-right: 1rem;
   }
 `;
 
-const DeliveryInfo = styled.div`
-margin-top: 0.5rem;
-`;
+const DeliveryInfo = styled.div`margin-top: 0.5rem;`;
 
 const DeliveryTitle = styled.h3`
-margin: 0;
+  margin: 0;
   padding: 0;
   margin-bottom: 0.25rem;
   font-weight: bold;
@@ -80,26 +75,33 @@ margin: 0;
 `;
 
 const DeliveryDescription = styled.div`
-font-size: 0.75rem;
+  font-size: 0.75rem;
   line-height: 1rem;
   color: #171717;
 `;
 
-export default function () {
+export default function() {
   return (
     <Details>
-
-      <Info/>
+      <Info />
 
       <Select>
         <ColumnWrap>
-          <Color>Colour: <ColorValue>Honey</ColorValue></Color>
+          <Color>
+            Colour: <ColorValue>Honey</ColorValue>
+          </Color>
           <ColorPicker>
-            <ButtonColor bgColor="#232122" label="Black"/>
-            <ButtonColor bgColor="#cfa880" label="Honey" active/>
+            <ButtonColor bgColor="#232122" label="Black" />
+            <ButtonColor bgColor="#cfa880" label="Honey" active />
           </ColorPicker>
           <Desctop>
-            <ButtonAction type="button" borderColor="#171717" fontColor="#ffffff" bgColor="#171717" label="ADD TO BAG"/>
+            <ButtonAction
+              type="button"
+              borderColor="#171717"
+              fontColor="#ffffff"
+              bgColor="#171717"
+              label="ADD TO BAG"
+            />
           </Desctop>
         </ColumnWrap>
         <Desctop>
@@ -110,22 +112,34 @@ export default function () {
       <Desctop>
         <DeliveryInfo>
           <DeliveryTitle>Free Next Day Delivery</DeliveryTitle>
-          <DeliveryDescription>Order before 7pm Monday to Thursday for delivery the next day</DeliveryDescription>
+          <DeliveryDescription>
+            Order before 7pm Monday to Thursday for delivery the next day
+          </DeliveryDescription>
         </DeliveryInfo>
       </Desctop>
 
       <Mobile>
         <ActionWrap>
-          <ButtonAction type="button" borderColor="#171717" fontColor="#ffffff" bgColor="#171717" label="SELECT A SIZE"/>
-          <ButtonAction type="button" borderColor="#999999" fontColor="#171717" bgColor="#ffffff" label="FIND IN STORE"/>
+          <ButtonAction
+            type="button"
+            borderColor="#171717"
+            fontColor="#ffffff"
+            bgColor="#171717"
+            label="SELECT A SIZE"
+          />
+          <ButtonAction
+            type="button"
+            borderColor="#999999"
+            fontColor="#171717"
+            bgColor="#ffffff"
+            label="FIND IN STORE"
+          />
         </ActionWrap>
       </Mobile>
 
-
-
       <Mobile>
-        <Help/>
+        <Help />
       </Mobile>
     </Details>
-  )
+  );
 }

@@ -1,21 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
-import Cards from './Cards';
+import React from "react";
+import styled from "styled-components";
+import Cards from "./Cards";
 
 const Wrap = styled.div`
   padding-top: 2.5rem;
-  
+
   @media screen and (min-width: 768px) {
     padding-top: 0.825rem;
   }
-  
+
   @media screen and (min-width: 992px) {
-      h2 {
-        display: block;
-        margin-top: 2.25rem;
-        text-align: center;
-      }
+    h2 {
+      display: block;
+      margin-top: 2.25rem;
+      text-align: center;
     }
+  }
 `;
 
 const Header = styled.h2`
@@ -29,14 +29,14 @@ const Header = styled.h2`
   font-weight: 400;
   color: #171717;
   border-bottom: 1px solid #171717;
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 1rem;
     padding-bottom: 0.4375rem;
     padding-left: 0;
     line-height: 1.1875rem;
   }
-  
+
   @media screen and (min-width: 992px) {
     border-bottom: none;
   }
@@ -47,10 +47,10 @@ const Recomedations = () => {
     <Wrap>
       <div className="container">
         <Header>WE RECOMMEND</Header>
-        <Cards/>
+        <Cards />
       </div>
     </Wrap>
-  )
+  );
 };
 
 export default Recomedations;

@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Button = styled.button`
   margin-right: 1rem;
@@ -12,11 +12,10 @@ const Button = styled.button`
   background-color: ${props => props.bgColor};
 `;
 
-export default function (props) {
+export default function(props) {
   return (
     <Button bgColor={props.bgColor} active={props.active}>
       color: {props.label}
     </Button>
-  )
+  );
 }
-

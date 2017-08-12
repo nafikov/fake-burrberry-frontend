@@ -1,11 +1,8 @@
-import React from 'react';
-import logo from '../files/logo.svg';
-import styled from 'styled-components'
+import React from "react";
+import logo from "../files/logo.svg";
+import styled from "styled-components";
 
-
-const HeaderComponent = styled.header`
-  border-bottom: 1px solid #c6c6c6;
-  `;
+const HeaderComponent = styled.header`border-bottom: 1px solid #c6c6c6;`;
 
 const Logo = styled.img`
   display: block;
@@ -17,7 +14,7 @@ const Logo = styled.img`
   @media screen and (min-width: 768px) {
     padding: 1.5rem;
   }
-  
+
   @media screen and (min-width: 992px) {
     width: 221px;
     height: 16px;
@@ -29,10 +26,10 @@ function Header() {
   return (
     <HeaderComponent>
       <a href="/">
-        <Logo src={logo}></Logo>
+        <Logo src={logo} />
       </a>
     </HeaderComponent>
-  )
+  );
 }
 
-export default Header
+export default Header;

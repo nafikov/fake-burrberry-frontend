@@ -1,9 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Gallery = styled.div`
-  margin-bottom: 4rem
-`;
+const Gallery = styled.div`margin-bottom: 4rem;`;
 
 const Image = styled.img`
   display: flex;
@@ -22,7 +20,7 @@ props.margin6 &&
   `};
 `;
 
-const DesctopGallery = (props) => {
+const DesctopGallery = props => {
   return (
     <div className="container">
       <Gallery>
@@ -50,7 +48,7 @@ const DesctopGallery = (props) => {
         </div>
       </Gallery>
     </div>
-  )
-}
+  );
+};
 
 export default DesctopGallery;

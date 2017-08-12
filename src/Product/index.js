@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import Title from './Title';
-import Gallery from './Gallery/Gallery';
-import Details from './Details/Details'
-import Description from './Description/Description';
-import Delivery from './Delivery/Delivery';
-import Recommend from './Recommend/Recommend';
-import More from './More';
-import DesctopGallery from './Gallery/DesctopGallery';
-import Responsive from 'react-responsive';
+import React from "react";
+import styled from "styled-components";
+import Title from "./Title";
+import Gallery from "./Gallery/Gallery";
+import Details from "./Details/Details";
+import Description from "./Description/Description";
+import Delivery from "./Delivery/Delivery";
+import Recommend from "./Recommend/Recommend";
+import More from "./More";
+import DesctopGallery from "./Gallery/DesctopGallery";
+import Responsive from "react-responsive";
 
 const Desctop = ({ children }) =>
   <Responsive minWidth={992} children={children} />;
@@ -29,20 +29,19 @@ const MainImage = styled.img`
   margin: 0 -0.5rem;
 `;
 
-export default function () {
+export default function() {
   return (
     <main>
-
       <View>
         <div className="container">
           <Mobile>
-            <Title label="Long Cotton Gabardine Car Coat"/>
+            <Title label="Long Cotton Gabardine Car Coat" />
           </Mobile>
 
           <div className="row middle-lg">
             <div className="col-xs-12 col-md-7 col-lg-6">
               <Mobile>
-                <Gallery/>
+                <Gallery />
               </Mobile>
 
               <Desctop>
@@ -51,32 +50,29 @@ export default function () {
                   alt="Product Image"
                 />
               </Desctop>
-
             </div>
             <div className="col-xs-12 col-md-5 col-lg-6">
               <Desctop>
-                <Title label="Long Cotton Gabardine Car Coat Coat Coat Coat Coat"/>
+                <Title label="Long Cotton Gabardine Car Coat Coat Coat Coat Coat" />
               </Desctop>
 
-              <Details/>
+              <Details />
             </div>
           </div>
         </div>
       </View>
 
-      <Description/>
+      <Description />
 
       <Desctop>
-        <DesctopGallery/>
+        <DesctopGallery />
       </Desctop>
 
-      <Delivery/>
+      <Delivery />
 
-      <Recommend/>
+      <Recommend />
 
-      <More/>
-
+      <More />
     </main>
-  )
-
+  );
 }

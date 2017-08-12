@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Wrap = styled.a`
   display: block;
   margin-bottom: 2rem;
   text-decoration: none;
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 4rem;
   }
@@ -16,7 +16,7 @@ const Photo = styled.img`
   min-width: 130px;
   width: 100%;
   height: auto;
-  
+
   @media screen and (min-width: 768px) {
     width: 100%;
     height: auto;
@@ -42,14 +42,18 @@ const Price = styled.h5`
   color: #999999;
 `;
 
-const Card = (props) => {
+const Card = props => {
   return (
-      <Wrap href="#">
-        <Photo src={props.path} alt={props.name}/>
-        <Name>{props.name}</Name>
-        <Price>{props.price} руб</Price>
-      </Wrap>
-  )
+    <Wrap href="#">
+      <Photo src={props.path} alt={props.name} />
+      <Name>
+        {props.name}
+      </Name>
+      <Price>
+        {props.price} руб
+      </Price>
+    </Wrap>
+  );
 };
 
 export default Card;

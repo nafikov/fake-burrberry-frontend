@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const NavTitle = styled.h2`
   margin: 0;
@@ -9,9 +9,7 @@ const NavTitle = styled.h2`
   font-weight: bold;
   text-transform: uppercase;
   color: #171717;
-  
-  // line-height: 0.875rem;
-  `;
+`;
 
 const NavItem = styled.a`
   display: block;
@@ -24,7 +22,7 @@ const NavItem = styled.a`
   text-decoration: none;
 `;
 
-export default function () {
+export default function() {
   return (
     <div className="container">
       <div className="row">
@@ -65,8 +63,5 @@ export default function () {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-
-

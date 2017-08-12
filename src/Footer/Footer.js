@@ -1,30 +1,29 @@
-import React from 'react';
-import styled from 'styled-components';
-import Navigation from './Navigation';
-
+import React from "react";
+import styled from "styled-components";
+import Navigation from "./Navigation";
 
 const Footer = styled.footer`
   padding: 2rem 0.5rem;
   background-color: #f3f3f3;
-  
+
   @media (min-width: 768px) {
     padding: 2rem 1rem;
   }
-  
+
   @media (min-width: 992px) {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-  `;
+`;
 
 const FooterMenu = styled.div`
   display: none;
-  
+
   @media screen and (min-width: 768px) {
     display: block;
     margin-bottom: 1.125rem;
   }
-  `;
+`;
 
 const Help = styled.h4`
   margin-top: 1.5rem;
@@ -35,11 +34,11 @@ const Help = styled.h4`
   font-size: 1rem;
   line-height: 19px;
   text-align: center;
-  
+
   @media screen and (min-width: 768px) {
     display: none;
   }
-  `;
+`;
 
 const ContactLink = styled.a`
   display: block;
@@ -51,11 +50,11 @@ const ContactLink = styled.a`
   font-size: 0.875rem;
   line-height: 17px;
   color: #171717;
-  
+
   @media screen and (min-width: 768px) {
     display: none;
   }
-  `;
+`;
 
 const Button = styled.button`
   display: block;
@@ -68,20 +67,19 @@ const Button = styled.button`
   line-height: 1rem;
   background-color: #f3f3f3;
   color: #999999;
-  
+
   @media screen and (min-width: 768px) {
     display: inline-block;
     margin-right: 1.25rem;
     margin-bottom: 0;
   }
-  `;
+`;
 
-
-export default function () {
+export default function() {
   return (
     <Footer>
       <FooterMenu>
-        <Navigation/>
+        <Navigation />
       </FooterMenu>
 
       <div className="container">
@@ -92,8 +90,5 @@ export default function () {
       <Help>Need help?</Help>
       <ContactLink href="/">Find out more and contact us</ContactLink>
     </Footer>
-  )
+  );
 }
-
-
-  

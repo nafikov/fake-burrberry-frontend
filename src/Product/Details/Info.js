@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  
+
   @media screen and (min-width: 992px) {
     margin-bottom: 3rem;
   }
@@ -30,7 +30,7 @@ const Article = styled.p`
   font-weight: 300;
   line-height: 1rem;
   color: #171717;
-  
+
   @media screen and (min-width: 992px) {
     display: none;
   }
@@ -42,7 +42,7 @@ const Info = () => {
       <Price>110 000 руб</Price>
       <Article>Item 39428531</Article>
     </Wrap>
-  )
-}
+  );
+};
 
 export default Info;
