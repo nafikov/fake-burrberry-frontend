@@ -1,13 +1,20 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 import Title from './Title';
 import Gallery from './Gallery/Gallery';
 import Details from './Details/Details'
 import Description from './Description/Description';
 import Delivery from './Delivery/Delivery';
+import Recommend from './Recommend/Recommend';
 
 export default function () {
   return (
     <main>
+      <Helmet>
+        <title>
+          Long Cotton Gabardine Car Coat | Men - Burberry"
+        </title>
+      </Helmet>
       <div className="container">
         <Title label="Long Cotton Gabardine Car Coat"/>
         <div className="row">
@@ -20,14 +27,13 @@ export default function () {
         </div>
       </div>
 
-      <div className="container">
-        <Description/>
-      </div>
+      <Description/>
 
       <Delivery/>
 
+      <Recommend/>
 
     </main>
   )
-  
+
 }
