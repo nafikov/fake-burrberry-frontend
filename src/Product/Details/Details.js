@@ -7,7 +7,7 @@ import Info from "./Info";
 import Size from "./Size";
 import Help from "./Help";
 
-const Desctop = ({ children }) =>
+const Desktop = ({ children }) =>
   <Responsive minWidth={992} children={children} />;
 const Mobile = ({ children }) =>
   <Responsive maxWidth={991} children={children} />;
@@ -49,13 +49,13 @@ const ColorPicker = styled.div`
   }
 `;
 
-const ActionWrap = styled.div`
+const ActionWrapper = styled.div`
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
 `;
 
-const ColumnWrap = styled.div`
+const ColumnWrapper = styled.div`
   @media (min-width: 992px) {
     width: 50%;
     margin-right: 1rem;
@@ -64,7 +64,7 @@ const ColumnWrap = styled.div`
 
 const DeliveryInfo = styled.div`margin-top: 0.5rem;`;
 
-const DeliveryTitle = styled.h3`
+const Title = styled.h3`
   margin: 0;
   padding: 0;
   margin-bottom: 0.25rem;
@@ -74,7 +74,7 @@ const DeliveryTitle = styled.h3`
   color: #171717;
 `;
 
-const DeliveryDescription = styled.div`
+const Description = styled.div`
   font-size: 0.75rem;
   line-height: 1rem;
   color: #171717;
@@ -86,7 +86,7 @@ export default function() {
       <Info />
 
       <Select>
-        <ColumnWrap>
+        <ColumnWrapper>
           <Color>
             Colour: <ColorValue>Honey</ColorValue>
           </Color>
@@ -94,7 +94,7 @@ export default function() {
             <ButtonColor bgColor="#232122" label="Black" />
             <ButtonColor bgColor="#cfa880" label="Honey" active />
           </ColorPicker>
-          <Desctop>
+          <Desktop>
             <ButtonAction
               type="button"
               borderColor="#171717"
@@ -102,24 +102,24 @@ export default function() {
               bgColor="#171717"
               label="ADD TO BAG"
             />
-          </Desctop>
-        </ColumnWrap>
-        <Desctop>
+          </Desktop>
+        </ColumnWrapper>
+        <Desktop>
           <Size />
-        </Desctop>
+        </Desktop>
       </Select>
 
-      <Desctop>
+      <Desktop>
         <DeliveryInfo>
-          <DeliveryTitle>Free Next Day Delivery</DeliveryTitle>
-          <DeliveryDescription>
+          <Title>Free Next Day Delivery</Title>
+          <Description>
             Order before 7pm Monday to Thursday for delivery the next day
-          </DeliveryDescription>
+          </Description>
         </DeliveryInfo>
-      </Desctop>
+      </Desktop>
 
       <Mobile>
-        <ActionWrap>
+        <ActionWrapper>
           <ButtonAction
             type="button"
             borderColor="#171717"
@@ -134,7 +134,7 @@ export default function() {
             bgColor="#ffffff"
             label="FIND IN STORE"
           />
-        </ActionWrap>
+        </ActionWrapper>
       </Mobile>
 
       <Mobile>

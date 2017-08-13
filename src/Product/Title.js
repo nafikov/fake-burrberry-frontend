@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ProductTitle = styled.h1`
+const Title = styled.h1`
   margin: 1rem;
   margin-left: 0;
   font-size: 1.25rem;
@@ -23,6 +23,6 @@ const ProductTitle = styled.h1`
 `;
 
 export default props =>
-  <ProductTitle>
+  <Title>
     {props.label}
-  </ProductTitle>;
+  </Title>;

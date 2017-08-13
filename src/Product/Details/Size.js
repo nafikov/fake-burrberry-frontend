@@ -12,7 +12,7 @@ const Size = styled.div`
   }
 `;
 
-const Wrap = styled.div`
+const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;
@@ -49,12 +49,12 @@ const Option = styled.button`
 
 export default props =>
   <Size>
-    <Wrap>
+    <Wrapper>
       <Text>
         Size: <SizeValue>XL</SizeValue>
       </Text>
       <Help />
-    </Wrap>
+    </Wrapper>
 
     <Options>
       <Option type="button">S</Option>

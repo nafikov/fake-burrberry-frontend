@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Item = styled.img`
+const Image = styled.img`
   width: auto;
   height: 400px;
 
@@ -10,6 +10,5 @@ const Item = styled.img`
   }
 `;
 
-export default function GalleryPhoto(props) {
-  return <Item src={`img/${props.photoName}.png`} alt={props.alt} />;
-}
+export default props =>
+  <Image src={`img/${props.name}.png`} alt={props.alt} />;

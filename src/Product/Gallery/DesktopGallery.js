@@ -20,7 +20,7 @@ props.margin6 &&
   `};
 `;
 
-const DesctopGallery = props => {
+const DesktopGallery = props => {
   return (
     <div className="container">
       <Gallery>
@@ -51,4 +51,4 @@ const DesctopGallery = props => {
   );
 };
 
-export default DesctopGallery;
+export default DesktopGallery;

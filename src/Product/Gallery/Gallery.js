@@ -1,5 +1,5 @@
 import React from "react";
-import GalleryPhoto from "./GalleryPhoto";
+import Image from "./Image";
 import styled from "styled-components";
 
 const Gallery = styled.div`
@@ -21,20 +21,20 @@ const Gallery = styled.div`
 export default function() {
   return (
     <Gallery>
-      <GalleryPhoto
-        photoName="product-image-1@2x"
+      <Image
+        name="product-image-1@2x"
         alt="Long Cotton Gabardine Car Coat"
       />
-      <GalleryPhoto
-        photoName="product-image-2@2x"
+      <Image
+        name="product-image-2@2x"
         alt="Long Cotton Gabardine Car Coat"
       />
-      <GalleryPhoto
-        photoName="product-image-3@2x"
+      <Image
+        name="product-image-3@2x"
         alt="Long Cotton Gabardine Car Coat"
       />
-      <GalleryPhoto
-        photoName="product-image-4@2x"
+      <Image
+        name="product-image-4@2x"
         alt="Long Cotton Gabardine Car Coat"
       />
     </Gallery>

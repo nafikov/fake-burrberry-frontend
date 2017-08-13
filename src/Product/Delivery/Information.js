@@ -12,7 +12,7 @@ const Header = styled.h2`
   color: #171717;
 `;
 
-const DeliveryFeature = styled.div`
+const Feature = styled.div`
   margin: 0;
   padding: 0;
   margin-bottom: 1.5rem;
@@ -40,30 +40,31 @@ const InformationWrap = styled.div``;
 export default function() {
   return (
     <div>
-      Order before 7pm Monday to Thursday for delivery the next day
       <Header>DELIVERY</Header>
-      <DeliveryFeature>
+      <Feature>
         <Title>Free Next Day Delivery</Title>
-        <Description />
-      </DeliveryFeature>
-      <DeliveryFeature>
+        <Description>
+          Order before 7pm Monday to Thursday for delivery the next day
+        </Description>
+      </Feature>
+      <Feature>
         <Title>Collect-in-Store</Title>
         <Description>
           Order online today and pick up your items in store as early as
           tomorrow
         </Description>
-      </DeliveryFeature>
-      <DeliveryFeature>
+      </Feature>
+      <Feature>
         <Title>Free Returns</Title>
         <Description>Enjoy free returns on your order</Description>
-      </DeliveryFeature>
-      <DeliveryFeature>
+      </Feature>
+      <Feature>
         <Title>Free Gift Packaging</Title>
         <Description>
           Discover our gift packaging, a gold lined box tied with a coloured
           ribbon
         </Description>
-      </DeliveryFeature>
+      </Feature>
     </div>
   );
 }

@@ -16,7 +16,7 @@ const Footer = styled.footer`
   }
 `;
 
-const FooterMenu = styled.div`
+const Wrapper = styled.div`
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -40,7 +40,7 @@ const Help = styled.h4`
   }
 `;
 
-const ContactLink = styled.a`
+const Contact = styled.a`
   display: block;
   text-align: center;
   text-decoration: none;
@@ -78,9 +78,9 @@ const Button = styled.button`
 export default function() {
   return (
     <Footer>
-      <FooterMenu>
+      <Wrapper>
         <Navigation />
-      </FooterMenu>
+      </Wrapper>
 
       <div className="container">
         <Button type="button">Shipping country: Russian Federation</Button>
@@ -88,7 +88,7 @@ export default function() {
       </div>
 
       <Help>Need help?</Help>
-      <ContactLink href="/">Find out more and contact us</ContactLink>
+      <Contact href="/">Find out more and contact us</Contact>
     </Footer>
   );
 }

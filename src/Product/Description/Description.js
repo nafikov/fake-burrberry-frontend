@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import triangle from "../../files/triangle.svg";
-import DescContent from "./DescContent";
+import Content from "./Content";
 import Responsive from "react-responsive";
 
-const Desctop = ({ children }) =>
+const Desktop = ({ children }) =>
   <Responsive minWidth={992} children={children} />;
 const Mobile = ({ children }) =>
   <Responsive maxWidth={991} children={children} />;
@@ -22,7 +22,7 @@ const Image = styled.img`
   width: 100%;
 `;
 
-const DescSubmenu = styled.div`
+const Submenu = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2rem 1rem;
@@ -47,14 +47,14 @@ const DescSubmenu = styled.div`
   }
 `;
 
-const Wrap = styled.div`
+const Wrapper = styled.div`
   @media screen and (min-width: 992px) {
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
 `;
 
-const DescTitle = styled.h2`
+const Title = styled.h2`
   margin: 0;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -65,31 +65,31 @@ const DescTitle = styled.h2`
 
 export default function() {
   return (
-    <Wrap>
+    <Wrapper>
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-lg-4">
             <Description>
-              <DescSubmenu active>
-                <DescTitle>DESCRIPTION</DescTitle>
-              </DescSubmenu>
+              <Submenu active>
+                <Title>DESCRIPTION</Title>
+              </Submenu>
 
-              <DescContent />
+              <Content />
 
               <Mobile>
-                <DescSubmenu>
-                  <DescTitle>SHIPPING &amp; RETURNS</DescTitle>
-                </DescSubmenu>
+                <Submenu>
+                  <Title>SHIPPING &amp; RETURNS</Title>
+                </Submenu>
               </Mobile>
             </Description>
           </div>
-          <Desctop>
+          <Desktop>
             <div className="col-lg-8">
               <Image src="img/product-image-5@2x.png" alt="Product Image 2" />
             </div>
-          </Desctop>
+          </Desktop>
         </div>
       </div>
-    </Wrap>
+    </Wrapper>
   );
 }

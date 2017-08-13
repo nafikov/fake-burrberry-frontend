@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrap = styled.div`
+const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,10 +38,10 @@ const Article = styled.p`
 
 const Info = () => {
   return (
-    <Wrap>
+    <Wrapper>
       <Price>110 000 руб</Price>
       <Article>Item 39428531</Article>
-    </Wrap>
+    </Wrapper>
   );
 };
 

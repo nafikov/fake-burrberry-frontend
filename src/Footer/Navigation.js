@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const NavTitle = styled.h2`
+const Title = styled.h2`
   margin: 0;
   margin-bottom: 1rem;
   font-size: 0.75rem;
@@ -11,7 +11,7 @@ const NavTitle = styled.h2`
   color: #171717;
 `;
 
-const NavItem = styled.a`
+const Item = styled.a`
   display: block;
   margin-bottom: 0.75rem;
   margin-right: 1.25rem;
@@ -28,37 +28,37 @@ export default function() {
       <div className="row">
         <div className="col-sm-3">
           <nav>
-            <NavTitle>Customer service</NavTitle>
-            <NavItem>Contact Us</NavItem>
-            <NavItem>Payment</NavItem>
-            <NavItem>Shipping</NavItem>
-            <NavItem>Returns</NavItem>
-            <NavItem>Faqs</NavItem>
-            <NavItem>Live Chat</NavItem>
-            <NavItem>The Burberry App</NavItem>
-            <NavItem>Store Locator</NavItem>
+            <Title>Customer service</Title>
+            <Item>Contact Us</Item>
+            <Item>Payment</Item>
+            <Item>Shipping</Item>
+            <Item>Returns</Item>
+            <Item>Faqs</Item>
+            <Item>Live Chat</Item>
+            <Item>The Burberry App</Item>
+            <Item>Store Locator</Item>
           </nav>
         </div>
 
         <div className="col-sm-3">
           <nav>
-            <NavTitle>Our company</NavTitle>
-            <NavItem>Our History</NavItem>
-            <NavItem>Burberry Group Plc</NavItem>
-            <NavItem>Careers</NavItem>
-            <NavItem>Corporate Responsibility</NavItem>
-            <NavItem>Site Map</NavItem>
+            <Title>Our company</Title>
+            <Item>Our History</Item>
+            <Item>Burberry Group Plc</Item>
+            <Item>Careers</Item>
+            <Item>Corporate Responsibility</Item>
+            <Item>Site Map</Item>
           </nav>
         </div>
 
         <div className="col-sm-3">
           <nav>
-            <NavTitle>Legal & cookies</NavTitle>
-            <NavItem>Terms & Conditions</NavItem>
-            <NavItem>Privacy Policy</NavItem>
-            <NavItem>Cookie Policy</NavItem>
-            <NavItem>Accessibility Statement</NavItem>
-            <NavItem>Japan Only - SCTL indications</NavItem>
+            <Title>Legal & cookies</Title>
+            <Item>Terms & Conditions</Item>
+            <Item>Privacy Policy</Item>
+            <Item>Cookie Policy</Item>
+            <Item>Accessibility Statement</Item>
+            <Item>Japan Only - SCTL indications</Item>
           </nav>
         </div>
       </div>

@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrap = styled.div`
+const Wrapper = styled.div`
   padding-top: 0.25rem;
-  padding-left: 1rem;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -38,14 +37,16 @@ const Link = styled.a`
 
 const More = () => {
   return (
-    <Wrap>
-      <Title>MORE FOR YOU</Title>
-      <Links>
-        <Link href="#">Men’s Black Trench Coats</Link>
-        <Link href="#">Men’s Short Trench Coats</Link>
-        <Link href="#">Men’s Long Trench Coats</Link>
-      </Links>
-    </Wrap>
+    <div className="container">
+      <Wrapper>
+        <Title>MORE FOR YOU</Title>
+        <Links>
+          <Link href="#">Men’s Black Trench Coats</Link>
+          <Link href="#">Men’s Short Trench Coats</Link>
+          <Link href="#">Men’s Long Trench Coats</Link>
+        </Links>
+      </Wrapper>
+    </div>
   );
 };
 

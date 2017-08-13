@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../files/logo.svg";
+import logo from "./files/logo.svg";
 import styled from "styled-components";
 
 const HeaderComponent = styled.header`border-bottom: 1px solid #c6c6c6;`;

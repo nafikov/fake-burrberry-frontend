@@ -7,15 +7,15 @@ import Description from "./Description/Description";
 import Delivery from "./Delivery/Delivery";
 import Recommend from "./Recommend/Recommend";
 import More from "./More";
-import DesctopGallery from "./Gallery/DesctopGallery";
+import DesktopGallery from "./Gallery/DesktopGallery";
 import Responsive from "react-responsive";
 
-const Desctop = ({ children }) =>
+const Desktop = ({ children }) =>
   <Responsive minWidth={992} children={children} />;
 const Mobile = ({ children }) =>
   <Responsive maxWidth={991} children={children} />;
 
-const View = styled.div`
+const Show = styled.div`
   @media (min-width: 992px) {
     margin-bottom: 4rem;
     background-color: #d4bdad;
@@ -32,7 +32,7 @@ const MainImage = styled.img`
 export default function() {
   return (
     <main>
-      <View>
+      <Show>
         <div className="container">
           <Mobile>
             <Title label="Long Cotton Gabardine Car Coat" />
@@ -44,34 +44,29 @@ export default function() {
                 <Gallery />
               </Mobile>
 
-              <Desctop>
+              <Desktop>
                 <MainImage
                   src="img/product-image-1@2x.png"
                   alt="Product Image"
                 />
-              </Desctop>
+              </Desktop>
             </div>
             <div className="col-xs-12 col-md-5 col-lg-6">
-              <Desctop>
+              <Desktop>
                 <Title label="Long Cotton Gabardine Car Coat Coat Coat Coat Coat" />
-              </Desctop>
+              </Desktop>
 
               <Details />
             </div>
           </div>
         </div>
-      </View>
-
+      </Show>
       <Description />
-
-      <Desctop>
-        <DesctopGallery />
-      </Desctop>
-
+      <Desktop>
+        <DesktopGallery />
+      </Desktop>
       <Delivery />
-
       <Recommend />
-
       <More />
     </main>
   );
