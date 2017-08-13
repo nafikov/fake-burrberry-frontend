@@ -43,7 +43,6 @@ const ColorPicker = styled.div`
   border-bottom: 1px solid #c6c6c6;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  margin-top: 1px;
 
   @media (min-width: 992px) {
     border-bottom: none;

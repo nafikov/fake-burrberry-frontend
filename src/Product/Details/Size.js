@@ -29,7 +29,7 @@ const SizeValue = styled.span`font-weight: 700;`;
 
 const Options = styled.div`
   display: flex;
-  margin: 1.0625rem 0 2.375rem;
+  margin: 1.0625rem 0 2.3125rem;
 `;
 
 const Option = styled.button`

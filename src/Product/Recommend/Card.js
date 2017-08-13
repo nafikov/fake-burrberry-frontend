@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrap = styled.a`
+const Wrapper = styled.a`
   display: block;
   margin-bottom: 2rem;
   text-decoration: none;
@@ -44,7 +44,7 @@ const Price = styled.h5`
 
 const Card = props => {
   return (
-    <Wrap href="#">
+    <Wrapper href="#">
       <Photo src={props.path} alt={props.name} />
       <Name>
         {props.name}
@@ -52,7 +52,7 @@ const Card = props => {
       <Price>
         {props.price} руб
       </Price>
-    </Wrap>
+    </Wrapper>
   );
 };
 

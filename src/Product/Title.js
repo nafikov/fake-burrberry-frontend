@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Title = styled.h1`
   margin: 1rem;
-  margin-left: 0;
+  margin-left: 0.5rem;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.2;
@@ -11,6 +11,7 @@ const Title = styled.h1`
   color: #111111;
 
   @media screen and (min-width: 768px) {
+    margin-left: 0;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
