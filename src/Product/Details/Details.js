@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Responsive from "react-responsive";
-import ButtonAction from "./ButtonAction";
+import ButtonMain from "./ButtonMain";
 import ButtonColor from "./ButtonColor";
 import Info from "./Info";
 import Size from "./Size";
@@ -32,6 +32,7 @@ const ColorValue = styled.span`font-weight: 700;`;
 
 const Select = styled.div`
   @media (min-width: 992px) {
+    margin-right: 0.5rem;
     display: flex;
     justify-content: space-between;
   }
@@ -95,7 +96,7 @@ export default function() {
             <ButtonColor bgColor="#cfa880" label="Honey" active />
           </ColorPicker>
           <Desktop>
-            <ButtonAction
+            <ButtonMain
               type="button"
               borderColor="#171717"
               fontColor="#ffffff"
@@ -120,14 +121,14 @@ export default function() {
 
       <Mobile>
         <ActionWrapper>
-          <ButtonAction
+          <ButtonMain
             type="button"
             borderColor="#171717"
             fontColor="#ffffff"
             bgColor="#171717"
             label="SELECT A SIZE"
           />
-          <ButtonAction
+          <ButtonMain
             type="button"
             borderColor="#999999"
             fontColor="#171717"

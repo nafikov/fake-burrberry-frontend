@@ -32,9 +32,9 @@ const Header = styled.h2`
 
   @media screen and (min-width: 768px) {
     margin-bottom: 1rem;
-    padding-bottom: 0.4375rem;
+    padding-bottom: 0.5rem;
     padding-left: 0;
-    line-height: 1.1875rem;
+    line-height: 1.25rem;
   }
 
   @media screen and (min-width: 992px) {

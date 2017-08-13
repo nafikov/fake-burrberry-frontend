@@ -6,7 +6,7 @@ const Content = styled.div`
   margin-bottom: 2rem;
   padding: 0 1rem;
   font-family: Lora;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5rem;
   color: #171717;
 
@@ -26,7 +26,7 @@ const Content = styled.div`
 
   @media screen and (min-width: 768px) {
     padding-left: 0;
-    margin-bottom: 1.44rem;
+    margin-bottom: 1.45rem;
   }
 `;
 

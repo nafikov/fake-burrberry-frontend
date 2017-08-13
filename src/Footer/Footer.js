@@ -32,7 +32,7 @@ const Help = styled.h4`
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 19px;
+  line-height: 1.25rem;
   text-align: center;
 
   @media screen and (min-width: 768px) {
@@ -48,7 +48,7 @@ const Contact = styled.a`
   font-weight: 400;
   font-style: italic;
   font-size: 0.875rem;
-  line-height: 17px;
+  line-height: 1rem;
   color: #171717;
 
   @media screen and (min-width: 768px) {

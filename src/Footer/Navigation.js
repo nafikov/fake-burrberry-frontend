@@ -5,7 +5,7 @@ const Title = styled.h2`
   margin: 0;
   margin-bottom: 1rem;
   font-size: 0.75rem;
-  line-height: 1;
+  line-height: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #171717;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Help from "./Help";
-import ButtonAction from "./ButtonAction";
+import ButtonAction from "./ButtonMain";
 
 const Size = styled.div`
   padding: 0;
@@ -21,7 +21,7 @@ const Text = styled.p`
   padding: 0;
   margin: 0;
   font-size: 0.75rem;
-  line-height: 1.16666667;
+  line-height: 1.167;
   color: #171717;
 `;
 
@@ -41,7 +41,6 @@ const Option = styled.button`
   background-color: inherit;
   font-weight: ${props => (props.active ? "bold" : "normal")};
   font-size: 0.75rem;
-  line-height: 1.33;
   &:last-child {
     margin-right: 0;
   }

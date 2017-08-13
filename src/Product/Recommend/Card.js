@@ -24,11 +24,11 @@ const Photo = styled.img`
 `;
 
 const Name = styled.h3`
-  margin-bottom: .5rem;
-  margin-top: .5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   font-family: Lora, serif;
   font-size: 1rem;
-  line-height: 1.19;
+  line-height: 1.25rem;
   font-weight: 400;
   color: #171717;
 `;

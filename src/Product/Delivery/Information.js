@@ -8,7 +8,7 @@ const Header = styled.h2`
   font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.188rem;
+  line-height: 1.185rem;
   color: #171717;
 `;
 
