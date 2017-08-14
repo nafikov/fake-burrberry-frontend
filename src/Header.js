@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "./files/logo.svg";
+import logo from "./assets/logo.svg";
 import styled from "styled-components";
 
-const HeaderComponent = styled.header`border-bottom: 1px solid #c6c6c6;`;
+const Header = styled.header`border-bottom: 1px solid #c6c6c6;`;
 
 const Logo = styled.img`
   display: block;
@@ -22,14 +22,12 @@ const Logo = styled.img`
   }
 `;
 
-function Header() {
+export default () => {
   return (
-    <HeaderComponent>
+    <Header>
       <a href="/">
         <Logo src={logo} />
       </a>
-    </HeaderComponent>
+    </Header>
   );
 }
-
-export default Header;

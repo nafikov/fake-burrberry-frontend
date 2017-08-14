@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import triangle from "../files/triangle.svg";
+import triangle from "../assets/triangle.svg";
 import { Lg, XsMd } from "../common/Responsive";
 
 const Description = styled.div`
