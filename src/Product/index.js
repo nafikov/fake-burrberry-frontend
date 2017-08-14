@@ -4,7 +4,7 @@ import Title from "./Title";
 import Gallery from "./Gallery/Gallery";
 import Details from "./Details/Details";
 import Description from "./Description/Description";
-import Delivery from "./Delivery/Delivery";
+import Delivery from "./Delivery";
 import Recommend from "./Recommend/Recommend";
 import More from "./More";
 import DesktopGallery from "./Gallery/DesktopGallery";

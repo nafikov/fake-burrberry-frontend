@@ -63,7 +63,7 @@ const Title = styled.h2`
   color: #171717;
 `;
 
-export default function() {
+export default () => {
   return (
     <Wrapper>
       <div className="container">
