@@ -42,10 +42,10 @@ const Price = styled.h5`
   color: #999999;
 `;
 
-const Card = props => {
+export default props => {
   return (
-    <Wrapper href="#">
-      <Photo src={props.path} alt={props.name} />
+    <Wrapper href={props.href}>
+      <Photo src={props.src} alt={props.name} />
       <Name>
         {props.name}
       </Name>
@@ -55,5 +55,3 @@ const Card = props => {
     </Wrapper>
   );
 };
-
-export default Card;

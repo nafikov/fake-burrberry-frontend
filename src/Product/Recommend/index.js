@@ -1,8 +1,35 @@
 import React from "react";
 import styled from "styled-components";
-import Cards from "./Cards";
+import Card from "./Card";
 
-const Wrap = styled.div`
+const productList = [
+  {
+    src: "img/item-001.jpg",
+    href: "#",
+    name: "Emroided Hooded",
+    price: 27000
+  },
+  {
+    src: "img/item-002.jpg",
+    href: "#",
+    name: "Relaxed Fit Stretch Jeans",
+    price: 22500
+  },
+  {
+    src: "img/item-003.jpg",
+    href: "#",
+    name: "Leather and House Check",
+    price: 120000
+  },
+  {
+    src: "img/item-004.jpg",
+    href: "#",
+    name: "Leather Wingtip Check",
+    price: 46000
+  }
+];
+
+const Wrapper = styled.div`
   padding-top: 2.5rem;
 
   @media screen and (min-width: 768px) {
@@ -42,15 +69,20 @@ const Header = styled.h2`
   }
 `;
 
-const Recomedations = () => {
+export default () => {
   return (
-    <Wrap>
+    <Wrapper>
       <div className="container">
         <Header>WE RECOMMEND</Header>
-        <Cards />
+
+        <div className="row">
+          {productList.map((product, index) =>
+            <div className="col-xs-6 col-md-3" key={index}>
+              <Card src={product.src} name={product.name} price={product.price} />
+            </div>
+          )}
+        </div>
       </div>
-    </Wrap>
+    </Wrapper>
   );
 };
-
-export default Recomedations;

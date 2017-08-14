@@ -53,7 +53,7 @@ const Subtitle = styled.h2`
   font-size: 1rem;
   line-height: 1.25rem;
   font-family: Raleway, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #171717;
 `;
 

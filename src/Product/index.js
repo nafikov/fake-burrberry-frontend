@@ -5,15 +5,10 @@ import Gallery from "./Gallery/Gallery";
 import Details from "./Details/Details";
 import Description from "./Description";
 import Delivery from "./Delivery";
-import Recommend from "./Recommend/Recommend";
+import Recommend from "./Recommend/";
 import More from "./More";
 import DesktopGallery from "./Gallery/DesktopGallery";
-import Responsive from "react-responsive";
-
-const Desktop = ({ children }) =>
-  <Responsive minWidth={992} children={children} />;
-const Mobile = ({ children }) =>
-  <Responsive maxWidth={991} children={children} />;
+import { Lg, ToLg } from "../common/Responsive";
 
 const Show = styled.div`
   @media (min-width: 992px) {
@@ -34,27 +29,27 @@ export default function() {
     <main>
       <Show>
         <div className="container">
-          <Mobile>
+          <ToLg>
             <Title label="Long Cotton Gabardine Car Coat" />
-          </Mobile>
+          </ToLg>
 
           <div className="row middle-lg">
             <div className="col-xs-12 col-md-7 col-lg-6">
-              <Mobile>
+              <ToLg>
                 <Gallery />
-              </Mobile>
+              </ToLg>
 
-              <Desktop>
+              <Lg>
                 <MainImage
                   src="img/product-image-1@2x.png"
                   alt="Product Image"
                 />
-              </Desktop>
+              </Lg>
             </div>
             <div className="col-xs-12 col-md-5 col-lg-6">
-              <Desktop>
+              <Lg>
                 <Title label="Long Cotton Gabardine Car Coat Coat Coat Coat Coat" />
-              </Desktop>
+              </Lg>
 
               <Details />
             </div>
@@ -62,9 +57,9 @@ export default function() {
         </div>
       </Show>
       <Description />
-      <Desktop>
+      <Lg>
         <DesktopGallery />
-      </Desktop>
+      </Lg>
       <Delivery />
       <Recommend />
       <More />
