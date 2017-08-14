@@ -27,14 +27,12 @@ export default () => {
             <Image
               src="img/product-image-2@2x.png"
               alt="Long Cotton Gabardine Car Coat"
-              margin2
             />
           </div>
           <div className="col-lg-4">
             <Image
               src="img/product-image-4@2x.png"
               alt="Long Cotton Gabardine Car Coat"
-              margin6
             />
           </div>
           <div className="col-lg-4">
