@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
-import GalleryXsMd from "./GalleryXsMd";
+import PhotosCarousel from "./PhotosCarousel";
 import Details from "./Details";
 import { Lg, XsMd } from "../../common/Responsive";
 
@@ -30,7 +30,7 @@ export default () => {
         <div className="row middle-lg">
           <div className="col-xs-12 col-md-7 col-lg-6">
             <XsMd>
-              <GalleryXsMd />
+              <PhotosCarousel />
             </XsMd>
 
             <Lg>

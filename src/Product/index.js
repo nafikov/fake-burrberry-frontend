@@ -4,7 +4,7 @@ import Description from "./Description";
 import Delivery from "./Delivery";
 import Recommend from "./Recommend";
 import More from "./More";
-import GalleryLg from "./MainInfo/GalleryLg";
+import Gallery from "./MainInfo/Gallery";
 import { Lg } from "../common/Responsive";
 
 export default () => {
@@ -13,7 +13,7 @@ export default () => {
       <Product />
       <Description />
       <Lg>
-        <GalleryLg />
+        <Gallery />
       </Lg>
       <Delivery />
       <Recommend />
