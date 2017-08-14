@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import NumberFormat from "react-number-format";
 
 const Wrapper = styled.a`
   display: block;
@@ -50,7 +51,12 @@ export default props => {
         {props.name}
       </Name>
       <Price>
-        {props.price} руб
+        <NumberFormat
+          value={props.price}
+          displayType="text"
+          thousandSeparator=" "
+          suffix=" руб."
+        />
       </Price>
     </Wrapper>
   );

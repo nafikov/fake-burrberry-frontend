@@ -7,25 +7,25 @@ const products = [
     src: "img/item-001.jpg",
     href: "#",
     name: "Emroided Hooded",
-    price: "27 000"
+    price: 27000
   },
   {
     src: "img/item-002.jpg",
     href: "#",
     name: "Relaxed Fit Stretch Jeans",
-    price: "22 500"
+    price: 22500
   },
   {
     src: "img/item-003.jpg",
     href: "#",
     name: "Leather and House Check",
-    price: "120 000"
+    price: 120000
   },
   {
     src: "img/item-004.jpg",
     href: "#",
     name: "Leather Wingtip Check",
-    price: "46 000"
+    price: 46000
   }
 ];
 
@@ -73,7 +73,11 @@ export default () => {
         <div className="row">
           {products.map((product, index) =>
             <div className="col-xs-6 col-md-3" key={index}>
-              <Card src={product.src} name={product.name} price={product.price} />
+              <Card
+                src={product.src}
+                name={product.name}
+                price={product.price}
+              />
             </div>
           )}
         </div>
