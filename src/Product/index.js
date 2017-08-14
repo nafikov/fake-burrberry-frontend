@@ -7,7 +7,7 @@ import More from "./More";
 import GalleryLg from "./MainInfo/GalleryLg";
 import { Lg } from "../common/Responsive";
 
-export default function() {
+export default () => {
   return (
     <main>
       <Product />

@@ -35,7 +35,7 @@ const Link = styled.a`
   color: #171717;
 `;
 
-const More = () => {
+export default () => {
   return (
     <div className="container">
       <Wrapper>
@@ -49,5 +49,3 @@ const More = () => {
     </div>
   );
 };
-
-export default More;

@@ -36,7 +36,7 @@ const Article = styled.p`
   }
 `;
 
-const Info = () => {
+export default () => {
   return (
     <Wrapper>
       <Price>110 000 руб</Price>
@@ -44,5 +44,3 @@ const Info = () => {
     </Wrapper>
   );
 };
-
-export default Info;
