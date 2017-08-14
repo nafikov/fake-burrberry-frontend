@@ -1,23 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div`margin-bottom: 4rem;`;
+const Wrapper = styled.div`
+  margin-bottom: 4rem;
+
+  .col-lg-4:nth-child(1) img {
+    margin-top: 2rem;
+  }
+
+  .col-lg-4:nth-child(2) img {
+    margin-top: 6rem;
+  }
+`;
 
 const Image = styled.img`
   display: flex;
   width: 100%;
-
-  ${props =>
-props.margin2 &&
-`
-    margin-top: 2rem;
-  `};
-
-  ${props =>
-props.margin6 &&
-`
-    margin-top: 6rem;
-  `};
 `;
 
 export default () => {

@@ -24,7 +24,7 @@ export default () => {
     <Wrapper>
       <div className="container">
         <XsMd>
-          <Header label="Long Cotton Gabardine Car Coat" />
+          <Header>Long Cotton Gabardine Car Coat</Header>
         </XsMd>
 
         <div className="row middle-lg">
@@ -42,7 +42,7 @@ export default () => {
           </div>
           <div className="col-xs-12 col-md-5 col-lg-6">
             <Lg>
-              <Header label="Long Cotton Gabardine Car Coat Coat Coat Coat Coat" />
+              <Header>Long Cotton Gabardine Car Coat Coat Coat Coat Coat</Header>
             </Lg>
 
             <Details />

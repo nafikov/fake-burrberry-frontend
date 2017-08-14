@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
 
-const productList = [
+const products = [
   {
     src: "img/item-001.jpg",
     href: "#",
@@ -35,14 +35,6 @@ const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     padding-top: 0.825rem;
   }
-
-  @media screen and (min-width: 992px) {
-    h2 {
-      display: block;
-      margin-top: 2.25rem;
-      text-align: center;
-    }
-  }
 `;
 
 const Header = styled.h2`
@@ -65,7 +57,10 @@ const Header = styled.h2`
   }
 
   @media screen and (min-width: 992px) {
-    border-bottom: none;
+    margin-top: 2.25rem;
+    display: block;
+    text-align: center;
+    border-bottom: none;  
   }
 `;
 
@@ -76,7 +71,7 @@ export default () => {
         <Header>WE RECOMMEND</Header>
 
         <div className="row">
-          {productList.map((product, index) =>
+          {products.map((product, index) =>
             <div className="col-xs-6 col-md-3" key={index}>
               <Card src={product.src} name={product.name} price={product.price} />
             </div>

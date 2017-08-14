@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const Title = styled.h1`
+export default styled.h1`
   margin: 1rem;
   margin-left: 0.5rem;
   font-size: 1.25rem;
@@ -22,8 +21,3 @@ const Title = styled.h1`
     margin-bottom: 0.5rem;
   }
 `;
-
-export default props =>
-  <Title>
-    {props.label}
-  </Title>;

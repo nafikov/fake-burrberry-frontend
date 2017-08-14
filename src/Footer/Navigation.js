@@ -11,7 +11,7 @@ const Title = styled.h2`
   color: #171717;
 `;
 
-const Item = styled.a`
+const Link = styled.a`
   display: block;
   margin-bottom: 0.75rem;
   margin-right: 1.25rem;
@@ -29,36 +29,36 @@ export default () => {
         <div className="col-sm-3">
           <nav>
             <Title>Customer service</Title>
-            <Item>Contact Us</Item>
-            <Item>Payment</Item>
-            <Item>Shipping</Item>
-            <Item>Returns</Item>
-            <Item>Faqs</Item>
-            <Item>Live Chat</Item>
-            <Item>The Burberry App</Item>
-            <Item>Store Locator</Item>
+            <Link>Contact Us</Link>
+            <Link>Payment</Link>
+            <Link>Shipping</Link>
+            <Link>Returns</Link>
+            <Link>Faqs</Link>
+            <Link>Live Chat</Link>
+            <Link>The Burberry App</Link>
+            <Link>Store Locator</Link>
           </nav>
         </div>
 
         <div className="col-sm-3">
           <nav>
             <Title>Our company</Title>
-            <Item>Our History</Item>
-            <Item>Burberry Group Plc</Item>
-            <Item>Careers</Item>
-            <Item>Corporate Responsibility</Item>
-            <Item>Site Map</Item>
+            <Link>Our History</Link>
+            <Link>Burberry Group Plc</Link>
+            <Link>Careers</Link>
+            <Link>Corporate Responsibility</Link>
+            <Link>Site Map</Link>
           </nav>
         </div>
 
         <div className="col-sm-3">
           <nav>
             <Title>Legal & cookies</Title>
-            <Item>Terms & Conditions</Item>
-            <Item>Privacy Policy</Item>
-            <Item>Cookie Policy</Item>
-            <Item>Accessibility Statement</Item>
-            <Item>Japan Only - SCTL indications</Item>
+            <Link>Terms & Conditions</Link>
+            <Link>Privacy Policy</Link>
+            <Link>Cookie Policy</Link>
+            <Link>Accessibility Statement</Link>
+            <Link>Japan Only - SCTL indications</Link>
           </nav>
         </div>
       </div>
