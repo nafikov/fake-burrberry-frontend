@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Help from "./Help";
-import ButtonAction from "./ButtonMain";
+import Button from "../../common/Button";
 
-const Size = styled.div`
+const Wrapper = styled.div`
   padding: 0;
   margin: 0;
 
@@ -12,7 +12,7 @@ const Size = styled.div`
   }
 `;
 
-const Wrapper = styled.div`
+const Value = styled.div`
   display: flex;
   justify-content: space-between;
 `;
@@ -47,28 +47,20 @@ const Option = styled.button`
 `;
 
 export default props =>
-  <Size>
-    <Wrapper>
+  <Wrapper>
+    <Value>
       <Text>
         Size: <SizeValue>XL</SizeValue>
       </Text>
       <Help />
-    </Wrapper>
+    </Value>
 
     <Options>
       <Option type="button">S</Option>
       <Option type="button">M</Option>
       <Option type="button">L</Option>
-      <Option type="button" active>
-        XL
-      </Option>
+      <Option type="button" active>XL</Option>
     </Options>
 
-    <ButtonAction
-      type="button"
-      borderColor="#171717"
-      fontColor="#171717"
-      bgColor="#d4bdad"
-      label="FIND IN STORE"
-    />
-  </Size>;
+    <Button type="button">FIND IN STORE</Button>
+  </Wrapper>;

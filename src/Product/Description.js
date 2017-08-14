@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import triangle from "../files/triangle.svg";
-import { Lg, ToLg } from "../common/Responsive";
+import { Lg, XsMd } from "../common/Responsive";
 
 const Description = styled.div`
   margin: 0;
@@ -123,11 +123,11 @@ export default () => {
                 </ul>
               </Content>
 
-              <ToLg>
+              <XsMd>
                 <Submenu>
                   <Subtitle>SHIPPING &amp; RETURNS</Subtitle>
                 </Submenu>
-              </ToLg>
+              </XsMd>
             </Description>
           </div>
           <Lg>

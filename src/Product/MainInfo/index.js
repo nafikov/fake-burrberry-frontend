@@ -1,16 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Responsive from "react-responsive";
 import Button from "../../common/Button";
 import ButtonColor from "./ButtonColor";
+import { Lg, XsMd } from "../../common/Responsive";
 import Info from "./Info";
-import Size from "./Size";
+import Size from "./SelectSize";
 import Help from "./Help";
-
-const Desktop = ({ children }) =>
-  <Responsive minWidth={992} children={children} />;
-const Mobile = ({ children }) =>
-  <Responsive maxWidth={991} children={children} />;
 
 const Details = styled.div`
   padding: 1rem 1rem 0rem 1rem;
@@ -94,34 +89,34 @@ export default function() {
             <ButtonColor color="#232122">color: Black</ButtonColor>
             <ButtonColor color="#cfa880" active>color: Honey</ButtonColor>
           </ColorPicker>
-          <Desktop>
+          <Lg>
             <Button type="button" primary>ADD TO BAG</Button>
-          </Desktop>
+          </Lg>
         </ColumnWrapper>
-        <Desktop>
+        <Lg>
           <Size />
-        </Desktop>
+        </Lg>
       </Select>
 
-      <Desktop>
+      <Lg>
         <DeliveryInfo>
           <Title>Free Next Day Delivery</Title>
           <Description>
             Order before 7pm Monday to Thursday for delivery the next day
           </Description>
         </DeliveryInfo>
-      </Desktop>
+      </Lg>
 
-      <Mobile>
+      <XsMd>
         <ActionWrapper>
           <Button type="button" primary>SELECT A SIZE</Button>
           <Button type="button">FIND IN STORE</Button>
         </ActionWrapper>
-      </Mobile>
+      </XsMd>
 
-      <Mobile>
+      <XsMd>
         <Help />
-      </Mobile>
+      </XsMd>
     </Details>
   );
 }

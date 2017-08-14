@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "./Title";
-import GalleryToLg from "./Gallery/ToLg";
-import Details from "./Details/Details";
+import Header from "./MainInfo/Header";
+import GalleryXsMd from "./MainInfo/GalleryXsMd";
+import MainInfo from "./MainInfo";
 import Description from "./Description";
 import Delivery from "./Delivery";
 import Recommend from "./Recommend/";
 import More from "./More";
-import GalleryLg from "./Gallery/Lg";
-import { Lg, ToLg } from "../common/Responsive";
+import GalleryLg from "./MainInfo/GalleryLg";
+import { Lg, XsMd } from "../common/Responsive";
 
 const Show = styled.div`
   @media (min-width: 992px) {
@@ -29,15 +29,15 @@ export default function() {
     <main>
       <Show>
         <div className="container">
-          <ToLg>
-            <Title label="Long Cotton Gabardine Car Coat" />
-          </ToLg>
+          <XsMd>
+            <Header label="Long Cotton Gabardine Car Coat" />
+          </XsMd>
 
           <div className="row middle-lg">
             <div className="col-xs-12 col-md-7 col-lg-6">
-              <ToLg>
-                <GalleryToLg />
-              </ToLg>
+              <XsMd>
+                <GalleryXsMd />
+              </XsMd>
 
               <Lg>
                 <MainImage
@@ -48,10 +48,10 @@ export default function() {
             </div>
             <div className="col-xs-12 col-md-5 col-lg-6">
               <Lg>
-                <Title label="Long Cotton Gabardine Car Coat Coat Coat Coat Coat" />
+                <Header label="Long Cotton Gabardine Car Coat Coat Coat Coat Coat" />
               </Lg>
 
-              <Details />
+              <MainInfo />
             </div>
           </div>
         </div>

@@ -20,8 +20,7 @@ const HelpButton = styled.button`
   }
 `;
 
-const Help = () => {
+export default () => {
   return <HelpButton>NEED SIZE HELP?</HelpButton>;
 };
 
-export default Help;
