@@ -1,8 +1,7 @@
 import React from "react";
-import Image from "./Image";
 import styled from "styled-components";
 
-const Gallery = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-flow: row;
   overflow-x: auto;
@@ -18,25 +17,34 @@ const Gallery = styled.div`
   }
 `;
 
-export default function() {
+const Image = styled.img`
+  width: auto;
+  height: 400px;
+
+  @media screen and (min-width: 768px) {
+    height: 576px;
+  }
+`;
+
+export default () => {
   return (
-    <Gallery>
+    <Wrapper>
       <Image
-        name="product-image-1@2x"
+        src="img/product-image-1@2x.png"
         alt="Long Cotton Gabardine Car Coat"
       />
       <Image
-        name="product-image-2@2x"
+        src="img/product-image-2@2x.png"
         alt="Long Cotton Gabardine Car Coat"
       />
       <Image
-        name="product-image-3@2x"
+        src="img/product-image-3@2x.png"
         alt="Long Cotton Gabardine Car Coat"
       />
       <Image
-        name="product-image-4@2x"
+        src="img/product-image-4@2x.png"
         alt="Long Cotton Gabardine Car Coat"
       />
-    </Gallery>
+    </Wrapper>
   );
 }

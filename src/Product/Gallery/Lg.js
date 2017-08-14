@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Gallery = styled.div`margin-bottom: 4rem;`;
+const Wrapper = styled.div`margin-bottom: 4rem;`;
 
 const Image = styled.img`
   display: flex;
@@ -20,10 +20,10 @@ props.margin6 &&
   `};
 `;
 
-const DesktopGallery = props => {
+export default () => {
   return (
     <div className="container">
-      <Gallery>
+      <Wrapper>
         <div className="row">
           <div className="col-lg-4">
             <Image
@@ -46,9 +46,7 @@ const DesktopGallery = props => {
             />
           </div>
         </div>
-      </Gallery>
+      </Wrapper>
     </div>
   );
 };
-
-export default DesktopGallery;

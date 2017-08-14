@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "./Title";
-import Gallery from "./Gallery/Gallery";
+import GalleryToLg from "./Gallery/ToLg";
 import Details from "./Details/Details";
 import Description from "./Description";
 import Delivery from "./Delivery";
 import Recommend from "./Recommend/";
 import More from "./More";
-import DesktopGallery from "./Gallery/DesktopGallery";
+import GalleryLg from "./Gallery/Lg";
 import { Lg, ToLg } from "../common/Responsive";
 
 const Show = styled.div`
@@ -36,7 +36,7 @@ export default function() {
           <div className="row middle-lg">
             <div className="col-xs-12 col-md-7 col-lg-6">
               <ToLg>
-                <Gallery />
+                <GalleryToLg />
               </ToLg>
 
               <Lg>
@@ -58,7 +58,7 @@ export default function() {
       </Show>
       <Description />
       <Lg>
-        <DesktopGallery />
+        <GalleryLg />
       </Lg>
       <Delivery />
       <Recommend />
