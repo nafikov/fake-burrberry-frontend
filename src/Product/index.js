@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Title from "./Title";
 import Gallery from "./Gallery/Gallery";
 import Details from "./Details/Details";
-import Description from "./Description/Description";
+import Description from "./Description";
 import Delivery from "./Delivery";
 import Recommend from "./Recommend/Recommend";
 import More from "./More";
