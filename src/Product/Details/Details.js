@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Responsive from "react-responsive";
-import ButtonMain from "./ButtonMain";
+import Button from "../../common/Button";
 import ButtonColor from "./ButtonColor";
 import Info from "./Info";
 import Size from "./Size";
@@ -91,17 +91,11 @@ export default function() {
             Colour: <ColorValue>Honey</ColorValue>
           </Color>
           <ColorPicker>
-            <ButtonColor bgColor="#232122" label="Black" />
-            <ButtonColor bgColor="#cfa880" label="Honey" active />
+            <ButtonColor color="#232122">color: Black</ButtonColor>
+            <ButtonColor color="#cfa880" active>color: Honey</ButtonColor>
           </ColorPicker>
           <Desktop>
-            <ButtonMain
-              type="button"
-              borderColor="#171717"
-              fontColor="#ffffff"
-              bgColor="#171717"
-              label="ADD TO BAG"
-            />
+            <Button type="button" primary>ADD TO BAG</Button>
           </Desktop>
         </ColumnWrapper>
         <Desktop>
@@ -120,20 +114,8 @@ export default function() {
 
       <Mobile>
         <ActionWrapper>
-          <ButtonMain
-            type="button"
-            borderColor="#171717"
-            fontColor="#ffffff"
-            bgColor="#171717"
-            label="SELECT A SIZE"
-          />
-          <ButtonMain
-            type="button"
-            borderColor="#999999"
-            fontColor="#171717"
-            bgColor="#ffffff"
-            label="FIND IN STORE"
-          />
+          <Button type="button" primary>SELECT A SIZE</Button>
+          <Button type="button">FIND IN STORE</Button>
         </ActionWrapper>
       </Mobile>
 

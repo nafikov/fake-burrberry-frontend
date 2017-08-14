@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = styled.button`
+export default styled.button`
   margin-right: 1rem;
   width: 2.5rem;
   height: 2.5rem;
@@ -9,13 +9,5 @@ const Button = styled.button`
   border: none;
   font-size: 0;
   border: solid 1px ${props => (props.active ? "#232122" : "transparent")};
-  background-color: ${props => props.bgColor};
+  background-color: ${props => props.color};
 `;
-
-export default function(props) {
-  return (
-    <Button bgColor={props.bgColor} active={props.active}>
-      color: {props.label}
-    </Button>
-  );
-}
