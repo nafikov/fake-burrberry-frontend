@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import Header from "./Header";
-import Footer from "./Footer/Footer";
-import Product from "./Product/";
+import Footer from "./Footer";
+import Product from "./Product";
 
 class App extends Component {
   render() {

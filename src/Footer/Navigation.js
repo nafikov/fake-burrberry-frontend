@@ -22,7 +22,7 @@ const Item = styled.a`
   text-decoration: none;
 `;
 
-export default function() {
+export default () => {
   return (
     <div className="container">
       <div className="row">

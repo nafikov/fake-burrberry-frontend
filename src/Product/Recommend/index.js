@@ -7,25 +7,25 @@ const productList = [
     src: "img/item-001.jpg",
     href: "#",
     name: "Emroided Hooded",
-    price: 27000
+    price: "27 000"
   },
   {
     src: "img/item-002.jpg",
     href: "#",
     name: "Relaxed Fit Stretch Jeans",
-    price: 22500
+    price: "22 500"
   },
   {
     src: "img/item-003.jpg",
     href: "#",
     name: "Leather and House Check",
-    price: 120000
+    price: "120 000"
   },
   {
     src: "img/item-004.jpg",
     href: "#",
     name: "Leather Wingtip Check",
-    price: 46000
+    price: "46 000"
   }
 ];
 

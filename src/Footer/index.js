@@ -75,7 +75,7 @@ const Button = styled.button`
   }
 `;
 
-export default function() {
+export default () => {
   return (
     <Footer>
       <Wrapper>
