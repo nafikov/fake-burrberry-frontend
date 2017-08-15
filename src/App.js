@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div>
       <Helmet>
-        <title>Long Cotton Gabardine Car Coat | Men - Burberry"</title>
+        <title>Long Cotton Gabardine Car Coat | Men - Burberry</title>
       </Helmet>
       <Header />
       <Product />
