@@ -1,32 +1,37 @@
-import React from "react";
-import styled from "styled-components";
-import Card from "./Card";
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import styled from 'styled-components';
+import Card from './Card';
 
 const products = [
   {
-    src: "img/item-001.jpg",
-    href: "#",
-    name: "Emroided Hooded",
-    price: 27000
+    id: 1,
+    src: 'img/item-001.jpg',
+    href: '#',
+    name: 'Emroided Hooded',
+    price: 27000,
   },
   {
-    src: "img/item-002.jpg",
-    href: "#",
-    name: "Relaxed Fit Stretch Jeans",
-    price: 22500
+    id: 2,
+    src: 'img/item-002.jpg',
+    href: '#',
+    name: 'Relaxed Fit Stretch Jeans',
+    price: 22500,
   },
   {
-    src: "img/item-003.jpg",
-    href: "#",
-    name: "Leather and House Check",
-    price: 120000
+    id: 3,
+    src: 'img/item-003.jpg',
+    href: '#',
+    name: 'Leather and House Check',
+    price: 120000,
   },
   {
-    src: "img/item-004.jpg",
-    href: "#",
-    name: "Leather Wingtip Check",
-    price: 46000
-  }
+    id: 4,
+    src: 'img/item-004.jpg',
+    href: '#',
+    name: 'Leather Wingtip Check',
+    price: 46000,
+  },
 ];
 
 const Wrapper = styled.div`
@@ -60,28 +65,25 @@ const Header = styled.h2`
     margin-top: 2.25rem;
     display: block;
     text-align: center;
-    border-bottom: none;  
+    border-bottom: none;
   }
 `;
 
-export default () => {
-  return (
-    <Wrapper>
-      <div className="container">
-        <Header>WE RECOMMEND</Header>
+export default () =>
+  (<Wrapper>
+    <div className="container">
+      <Header>WE RECOMMEND</Header>
 
-        <div className="row">
-          {products.map((product, index) =>
-            <div className="col-xs-6 col-md-3" key={index}>
-              <Card
-                src={product.src}
-                name={product.name}
-                price={product.price}
-              />
-            </div>
-          )}
-        </div>
+      <div className="row">
+        {products.map((product, index) =>
+          (<div className="col-xs-6 col-md-3" key={product.id}>
+            <Card
+              src={product.src}
+              name={product.name}
+              price={product.price}
+            />
+          </div>),
+        )}
       </div>
-    </Wrapper>
-  );
-};
+    </div>
+  </Wrapper>);

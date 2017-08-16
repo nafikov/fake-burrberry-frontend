@@ -1,4 +1,26 @@
+//{
+//  "extends": ["airbnb", "plugin:react/recommended"],
+//  "plugins": ["react", "jsx-a11y", "import"],
+//  "parser": "babel-eslint",
+//  "globals": {
+//    "it": true,
+//    "document": true
+//  }
+//}
+//
+//{
+//  "extends": "airbnb",
+//  "rules": {
+//    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+//  }
+//}
+
 {
-  "extends": "airbnb-base",
-  "plugins": ["react", "jsx-a11y", "import"]
+  "extends": "airbnb",
+  "rules": {
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+  },
+  "env": {
+    "browser": true
+  }
 }

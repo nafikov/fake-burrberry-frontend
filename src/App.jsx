@@ -1,8 +1,8 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import Header from "./Header";
-import Footer from "./Footer";
-import Product from "./Product";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import Header from './Header';
+import Footer from './Footer/index';
+import Product from './Product/index';
 
 export default function App() {
   return (
@@ -15,4 +15,4 @@ export default function App() {
       <Footer />
     </div>
   );
-};
+}

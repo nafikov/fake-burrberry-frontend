@@ -1,6 +1,6 @@
-import React from "react";
-import logo from "./assets/logo.svg";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import logo from './assets/logo.svg';
 
 const Header = styled.header`border-bottom: 1px solid #c6c6c6;`;
 
@@ -10,6 +10,7 @@ const Logo = styled.img`
   height: 10px;
   margin: 0 auto;
   padding: 1rem;
+  yarn upgrade eslint-plugin-jsx-a11y@^4.0.0 --dev
 
   @media screen and (min-width: 768px) {
     padding: 1.5rem;
@@ -22,12 +23,9 @@ const Logo = styled.img`
   }
 `;
 
-export default () => {
-  return (
-    <Header>
-      <a href="/">
-        <Logo src={logo} />
-      </a>
-    </Header>
-  );
-}
+export default () =>
+  (<Header>
+    <a href="/">
+      <Logo src={logo} />
+    </a>
+  </Header>);
