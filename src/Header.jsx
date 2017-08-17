@@ -23,12 +23,12 @@ const Logo = styled.img`
 `;
 
 const Country = styled.button`
-  // display: none;
+  display: none;
 
   @media screen and (min-width: 768px) {
+    display: block;
     position: absolute;
     top: 1.5rem;
-    left: 0.5rem;
     border: none;
     padding: 0;
     color: #999999;
@@ -38,13 +38,25 @@ const Country = styled.button`
     font-weight: 700;
     background-color: transparent;
   }
+  
+  @media screen and (min-width: 992px) {
+    top: 2rem;
+  }
+`;
+
+const Wrapper = styled.div`
+  position: relative;
 `;
 
 export default () => (
   <Header>
-    <Country>Shopping in: United Kingdom(&#163;)</Country>
-    <a href="/">
-      <Logo src={logo} />
-    </a>
+    <div className="container">
+      <Wrapper>
+        <Country>Shopping in: United Kingdom(&#163;)</Country>
+        <a href="/">
+          <Logo src={logo} />
+        </a>
+      </Wrapper>
+    </div>
   </Header>
 );
