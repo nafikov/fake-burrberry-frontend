@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Lg } from '../common/Responsive';
 
 const Title = styled.h2`
   margin: 0;
@@ -20,6 +21,22 @@ const Link = styled.a`
   font-weight: 600;
   color: #999999;
   text-decoration: none;
+`;
+
+const Photo = styled.img`
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+`;
+
+const Store = styled.a`
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: '#171717';
+  border-bottom: solid 1px #171717;
 `;
 
 export default () => (
@@ -60,6 +77,18 @@ export default () => (
           <Link>Japan Only - SCTL indications</Link>
         </nav>
       </div>
+
+      <Lg>
+        <div className="col-sm-3">
+          <nav>
+            <Photo
+              src="http://assets.burberry.com/is/image/Burberryltd/933f04c94a361dfd816c77528ec0e7286921051b.jpg"
+              alt="Find a store"
+            />
+            <Store>Find a store</Store>
+          </nav>
+        </div>
+      </Lg>
     </div>
   </div>
 );
