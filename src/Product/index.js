@@ -7,9 +7,11 @@ import Recommend from './Recommend/index';
 import More from './More';
 import Gallery from './MainInfo/Gallery';
 import { Lg } from '../common/Responsive';
+import Nav from '../common/Nav';
 
 export default () =>
   (<main>
+    <Nav />
     <Product />
     <Description />
     <Lg>
