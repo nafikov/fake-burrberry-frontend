@@ -10,7 +10,6 @@ const Logo = styled.img`
   height: 10px;
   margin: 0 auto;
   padding: 1rem;
-  yarn upgrade eslint-plugin-jsx-a11y@^4.0.0 --dev
 
   @media screen and (min-width: 768px) {
     padding: 1.5rem;
