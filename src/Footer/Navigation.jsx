@@ -35,7 +35,8 @@ const Store = styled.a`
   line-height: 1rem;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  color: '#171717';
+  color: #171717;
+  text-decoration: none;
   border-bottom: solid 1px #171717;
 `;
 
@@ -85,7 +86,7 @@ export default () => (
               src="http://assets.burberry.com/is/image/Burberryltd/933f04c94a361dfd816c77528ec0e7286921051b.jpg"
               alt="Find a store"
             />
-            <Store>Find a store</Store>
+            <Store href="#">Find a store</Store>
           </nav>
         </div>
       </Lg>

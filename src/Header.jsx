@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from './assets/logo.svg';
+import hamburger from './assets/hamburger.svg';
 
 const Header = styled.header``;
 
@@ -19,6 +20,20 @@ const Logo = styled.img`
     width: 221px;
     height: 16px;
     padding: 2rem;
+  }
+`;
+
+const Hamburger = styled.img`
+  display: block;
+  width: 16px;
+  height: 10px;
+  
+  position: absolute;
+  top: 1.25rem;
+  left: 0.5rem;
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;
 
@@ -52,6 +67,7 @@ export default () => (
   <Header>
     <div className="container">
       <Wrapper>
+        <Hamburger src={hamburger} />
         <Country>Shopping in: United Kingdom(&#163;)</Country>
         <a href="/">
           <Logo src={logo} />
