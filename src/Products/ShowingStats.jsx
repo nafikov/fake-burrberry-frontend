@@ -11,7 +11,7 @@ const Button = styled.button`
   font-family: Raleway, sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #171717;
 `;
 

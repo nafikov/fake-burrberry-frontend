@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Header from './Header';
 import Footer from './Footer/index';
 import Product from './Product/index';
+import Products from './Products/index';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       </Helmet>
       <Header />
       <Product />
+      <Products />
       <Footer />
     </div>
   );
