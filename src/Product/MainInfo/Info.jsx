@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import NumberFormat from "react-number-format";
+import React from 'react';
+import styled from 'styled-components';
+import NumberFormat from 'react-number-format';
 
 const Wrapper = styled.div`
   display: flex;
@@ -37,18 +37,15 @@ const Article = styled.p`
   }
 `;
 
-export default () => {
-  return (
-    <Wrapper>
-      <Price>
-        <NumberFormat
-          value={110000}
-          displayType="text"
-          thousandSeparator=" "
-          suffix=" руб."
-        />
-      </Price>
-      <Article>Item 39428531</Article>
-    </Wrapper>
-  );
-};
+export default () =>
+  (<Wrapper>
+    <Price>
+      <NumberFormat
+        value={110000}
+        displayType="text"
+        thousandSeparator=" "
+        suffix=" руб."
+      />
+    </Price>
+    <Article>Item 39428531</Article>
+  </Wrapper>);

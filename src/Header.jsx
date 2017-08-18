@@ -1,6 +1,6 @@
-import React from "react";
-import logo from "./assets/logo.svg";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import logo from './assets/logo.svg';
 
 const Header = styled.header`border-bottom: 1px solid #c6c6c6;`;
 
@@ -22,12 +22,9 @@ const Logo = styled.img`
   }
 `;
 
-export default () => {
-  return (
-    <Header>
-      <a href="/">
-        <Logo src={logo} />
-      </a>
-    </Header>
-  );
-}
+export default () =>
+  (<Header>
+    <a href="/">
+      <Logo src={logo} />
+    </a>
+  </Header>);

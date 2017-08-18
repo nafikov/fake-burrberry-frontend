@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const HelpButton = styled.button`
   display: block;
@@ -20,7 +20,4 @@ const HelpButton = styled.button`
   }
 `;
 
-export default () => {
-  return <HelpButton>NEED SIZE HELP?</HelpButton>;
-};
-
+export default () => (<HelpButton>NEED SIZE HELP?</HelpButton>);

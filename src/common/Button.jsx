@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export default styled.button`
   padding: 1rem 0;
@@ -9,8 +9,8 @@ export default styled.button`
   line-height: 0.875rem;
   font-weight: 400;
   border: solid 1px #171717;
-  color: ${props => (props.primary ? "#ffffff" : "#171717")};
-  background-color: ${props => (props.primary ? "#171717" : "Transparent")};
+  color: ${props => (props.primary ? '#ffffff' : '#171717')};
+  background-color: ${props => (props.primary ? '#171717' : 'Transparent')};
 
   @media screen and (min-width: 768px) {
     padding-top: 1rem;

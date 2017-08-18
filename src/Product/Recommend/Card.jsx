@@ -1,6 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import NumberFormat from "react-number-format";
+/* eslint-disable react/no-unused-prop-types */
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import NumberFormat from 'react-number-format';
 
 const Wrapper = styled.a`
   display: block;
@@ -43,7 +45,7 @@ const Price = styled.h5`
   color: #999999;
 `;
 
-export default props => {
+export default function Card(props) {
   return (
     <Wrapper href={props.href}>
       <Photo src={props.src} alt={props.name} />
@@ -60,4 +62,12 @@ export default props => {
       </Price>
     </Wrapper>
   );
+}
+
+Card.propTypes = {
+  id: PropTypes.number.isRequired,
+  href: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
 };

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   padding-top: 0.25rem;
@@ -35,17 +35,14 @@ const Link = styled.a`
   color: #171717;
 `;
 
-export default () => {
-  return (
-    <div className="container">
-      <Wrapper>
-        <Title>MORE FOR YOU</Title>
-        <Links>
-          <Link href="#">Men’s Black Trench Coats</Link>
-          <Link href="#">Men’s Short Trench Coats</Link>
-          <Link href="#">Men’s Long Trench Coats</Link>
-        </Links>
-      </Wrapper>
-    </div>
-  );
-};
+export default () =>
+  (<div className="container">
+    <Wrapper>
+      <Title>MORE FOR YOU</Title>
+      <Links>
+        <Link href="#">Men’s Black Trench Coats</Link>
+        <Link href="#">Men’s Short Trench Coats</Link>
+        <Link href="#">Men’s Long Trench Coats</Link>
+      </Links>
+    </Wrapper>
+  </div>);

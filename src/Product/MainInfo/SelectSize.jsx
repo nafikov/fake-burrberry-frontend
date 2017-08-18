@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Help from "./Help";
-import Button from "../../common/Button";
+import React from 'react';
+import styled from 'styled-components';
+import Help from './Help';
+import Button from '../../common/Button';
 
 const Wrapper = styled.div`
   padding: 0;
@@ -39,15 +39,15 @@ const Option = styled.button`
   border-radius: 2px;
   border: solid 1px #171717;
   background-color: inherit;
-  font-weight: ${props => (props.active ? "bold" : "normal")};
+  font-weight: ${props => (props.active ? 'bold' : 'normal')};
   font-size: 0.75rem;
   &:last-child {
     margin-right: 0;
   }
 `;
 
-export default props =>
-  <Wrapper>
+export default () =>
+  (<Wrapper>
     <Value>
       <Text>
         Size: <SizeValue>XL</SizeValue>
@@ -59,8 +59,10 @@ export default props =>
       <Option type="button">S</Option>
       <Option type="button">M</Option>
       <Option type="button">L</Option>
-      <Option type="button" active>XL</Option>
+      <Option type="button" active>
+        XL
+      </Option>
     </Options>
 
     <Button type="button">FIND IN STORE</Button>
-  </Wrapper>;
+  </Wrapper>);
