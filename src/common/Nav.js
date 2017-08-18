@@ -9,6 +9,7 @@ const Link = styled.a`
   font-weight: 700;
   letter-spacing: 1.5px;
   color: ${props => (props.active ? '#171717' : '#999999')};
+  text-decoration: none;
   border-bottom: ${props => (props.active ? 'solid 1px #171717;' : 'none')};
 `;
 
@@ -23,10 +24,10 @@ const Wrapper = styled.div`
 
 export default () => (
   <Wrapper>
-    <Link>WOMEN</Link>
-    <Link active>MEN</Link>
-    <Link>CHILDREN</Link>
-    <Link>BEAUTY</Link>
-    <Link>EXPERIENCE</Link>
+    <Link href="#">WOMEN</Link>
+    <Link href="#" active>MEN</Link>
+    <Link href="#">CHILDREN</Link>
+    <Link href="#">BEAUTY</Link>
+    <Link href="#">EXPERIENCE</Link>
   </Wrapper>
 );

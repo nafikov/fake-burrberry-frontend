@@ -8,6 +8,7 @@ import More from './More';
 import Gallery from './MainInfo/Gallery';
 import { Lg } from '../common/Responsive';
 import Nav from '../common/Nav';
+import MoreShowing from '../Products/ShowingStats';
 
 export default () =>
   (<main>
@@ -20,4 +21,7 @@ export default () =>
     <Delivery />
     <Recommend />
     <More />
+
+    <MoreShowing />
+
   </main>);
