@@ -45,8 +45,13 @@ const Name = styled.h3`
   font-weight: 600;
   color: #171717;
   
-  @media only screen and (min-width: 48rem) {
+  @media only screen and (min-width: 768px) {
     font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    font-size: 1rem;
     line-height: 1.25rem;
   }
 `;
@@ -67,7 +72,8 @@ export default function Card(props) {
         <NumberFormat
           value={props.price}
           displayType="text"
-          thousandSeparator=" "
+          thousandSeparator=","
+          decimalSeparator="."
           prefix="&#163;"
         />
       </Price>

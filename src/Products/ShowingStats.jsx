@@ -5,8 +5,9 @@ const Button = styled.button`
   display: block;
   margin: 0;
   padding: 1rem 2rem;
-  border: solid 1px #171717;
+  border: 1px solid #171717;
   border-radius: 2px;
+  outline: none;
   background-color: transparent;
   font-family: Raleway, sans-serif;
   font-size: 0.75rem;
@@ -26,6 +27,7 @@ const Title = styled.h2`
   color: #171717;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 2rem;
     font-size: 1.25rem;
     line-height: 1.5rem;
   }

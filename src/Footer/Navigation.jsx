@@ -6,7 +6,7 @@ const Title = styled.h2`
   margin: 0;
   margin-bottom: 1rem;
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 0.875rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #171717;
@@ -15,7 +15,6 @@ const Title = styled.h2`
 const Link = styled.a`
   display: block;
   margin-bottom: 0.75rem;
-  margin-right: 1.25rem;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 600;

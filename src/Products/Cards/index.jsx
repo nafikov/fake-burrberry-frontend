@@ -13,7 +13,7 @@ const products = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1395,
     collection: 'Relaxed Fit',
-    colors: 1,
+    colors: 3,
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const products = [
     name: 'The Chelsea – Short Heritage Trench Coat',
     price: 1195,
     collection: 'Slim fit',
-    colors: 2,
+    colors: 3,
   },
   {
     id: 5,

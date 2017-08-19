@@ -7,30 +7,28 @@ const Header = styled.header``;
 
 const Logo = styled.img`
   display: block;
-  width: 138px;
-  height: 10px;
+  height: 12px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.125rem;
 
   @media screen and (min-width: 768px) {
+    height: 16px;
     padding: 1.5rem;
   }
 
   @media screen and (min-width: 992px) {
     width: 221px;
-    height: 16px;
     padding: 2rem;
   }
 `;
 
 const Hamburger = styled.img`
+  position: absolute;
+  top: 1.125rem;
+  
   display: block;
   width: 16px;
-  height: 10px;
-  
-  position: absolute;
-  top: 1.25rem;
-  left: 0.5rem;
+  height: 12px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -68,7 +66,7 @@ export default () => (
     <div className="container">
       <Wrapper>
         <Hamburger src={hamburger} />
-        <Country>Shopping in: United Kingdom(&#163;)</Country>
+        <Country>Shopping in: United Kingdom (&#163;)</Country>
         <a href="/">
           <Logo src={logo} />
         </a>

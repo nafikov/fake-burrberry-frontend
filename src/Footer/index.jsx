@@ -4,15 +4,18 @@ import Navigation from './Navigation';
 
 const Footer = styled.footer`
   padding: 2rem 0.5rem;
+  padding-left: 0;
   background-color: #f3f3f3;
-
+  
   @media (min-width: 768px) {
     padding: 2rem 1rem;
+    padding-left: 0;
   }
 
   @media (min-width: 992px) {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-left: 16px;
   }
 `;
 
@@ -22,6 +25,10 @@ const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     display: block;
     margin-bottom: 1.125rem;
+  }
+  
+  @media screen and (min-width: 992px) {
+    margin-bottom: 2.125rem;
   }
 `;
 
@@ -58,6 +65,7 @@ const Contact = styled.a`
 
 const Button = styled.button`
   display: block;
+  
   margin-bottom: 1rem;
   border: none;
   padding: 0;
@@ -70,8 +78,12 @@ const Button = styled.button`
 
   @media screen and (min-width: 768px) {
     display: inline-block;
-    margin-right: 1.25rem;
+    margin-right: 1.5rem;
     margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 992px) {
+    margin-right: 3rem;
   }
 `;
 

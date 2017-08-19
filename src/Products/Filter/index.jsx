@@ -66,8 +66,8 @@ export default function Filter(props) {
             <Description>
               Explore our menswear collection for the season.
               Sculptural knitwear, <Underline>sweatshirts</Underline>,
-              artist overalls and oversized cabans feature alongside
-              our signature trench coat in both heritage. <Button type="button">More</Button>
+              artist overalls and oversized cabans feature alongside our signature
+              trench coat in both heritage and seasonal. <Button type="button">More</Button>
             </Description>
           </div>
         </div>
