@@ -50,6 +50,13 @@ const Description = styled.p`
   }
 `;
 
+const Underline = styled.span`
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  border-bottom: 1px solid #171717;
+  }
+`;
+
 export default function Filter(props) {
   return (
     <Wrapper>
@@ -59,9 +66,9 @@ export default function Filter(props) {
           <div className="col-xs-12 col-md-9 col-lg-7">
             <Description>
               Explore our menswear collection for the season.
-              Sculptural knitwear, sweatshirts, artist overalls and
-              oversized cabans feature alongside our signature trench
-              coat in both heritage. <Button type="button">More</Button>
+              Sculptural knitwear, <Underline>sweatshirts</Underline>
+              sweatshirts, artist overalls and oversized cabans feature alongside
+              our signature trench coat in both heritage. <Button type="button">More</Button>
             </Description>
           </div>
         </div>

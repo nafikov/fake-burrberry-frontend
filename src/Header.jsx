@@ -50,7 +50,7 @@ const Country = styled.button`
     font-size: 0.75rem;
     line-height: 1rem;
     font-family: Raleway, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     background-color: transparent;
   }
   

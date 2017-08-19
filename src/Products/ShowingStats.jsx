@@ -37,13 +37,9 @@ const Wrapper1 = styled.div`
 `;
 
 const Wrapper2 = styled.div`
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-bottom: 5rem;
   text-align: center;
-  
-  @media screen and (min-width: 768px) {
-    margin-top: 5rem;
-  }
 `;
 
 export default () => (
