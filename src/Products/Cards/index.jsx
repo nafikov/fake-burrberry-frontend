@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Card from './Card';
 import Hr from '../../common/Hr';
 
-const products = [
+const heritageCoats = [
   {
     id: 1,
     src:
@@ -87,7 +87,7 @@ const products = [
   },
 ];
 
-const products2 = [
+const singleBreastCoats = [
   {
     id: 1,
     src:
@@ -215,7 +215,7 @@ export default () =>
     <div className="container">
       <Header>Heritage Trench Coats</Header>
       <div className="row">
-        {products.map(product =>
+        {heritageCoats.map(product =>
           (<div className="col-xs-6 col-md-3" key={product.id}>
             <Card
               href={product.href}
@@ -232,7 +232,7 @@ export default () =>
 
       <Header>Single Breasted Trench Coats</Header>
       <div className="row">
-        {products2.map((product, index) =>
+        {singleBreastCoats.map((product, index) =>
           (<div className="col-xs-6 col-md-3" key={product.id}>
             <Card
               href={product.href}
