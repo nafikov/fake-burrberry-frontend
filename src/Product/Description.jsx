@@ -1,3 +1,4 @@
+/* eslint-disable prefer-template */
 import React from 'react';
 import styled from 'styled-components';
 import triangle from '../assets/triangle.svg';
@@ -132,7 +133,7 @@ export default () =>
         </div>
         <Lg>
           <div className="col-lg-8">
-            <Image src="img/product-image-5@2x.png" alt="Product Image 2" />
+            <Image src={process.env.PUBLIC_URL + 'img/product-image-5@2x.png'} alt="Product Image 2" />
           </div>
         </Lg>
       </div>

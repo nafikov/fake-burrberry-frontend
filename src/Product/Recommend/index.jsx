@@ -6,28 +6,28 @@ import Card from './Card';
 const products = [
   {
     id: 1,
-    src: 'img/item-001.jpg',
+    src: `${process.env.PUBLIC_URL}/img/item-001.jpg`,
     href: '#',
     name: 'Emroided Hooded',
     price: 27000,
   },
   {
     id: 2,
-    src: 'img/item-002.jpg',
+    src: `${process.env.PUBLIC_URL}/img/item-002.jpg`,
     href: '#',
     name: 'Relaxed Fit Stretch Jeans',
     price: 22500,
   },
   {
     id: 3,
-    src: 'img/item-003.jpg',
+    src: `${process.env.PUBLIC_URL}/img/item-003.jpg`,
     href: '#',
     name: 'Leather and House Check',
     price: 120000,
   },
   {
     id: 4,
-    src: 'img/item-004.jpg',
+    src: `${process.env.PUBLIC_URL}/img/item-004.jpg`,
     href: '#',
     name: 'Leather Wingtip Check',
     price: 46000,

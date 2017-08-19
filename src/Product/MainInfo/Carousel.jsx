@@ -1,3 +1,4 @@
+/* eslint-disable prefer-template */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -29,19 +30,19 @@ const Image = styled.img`
 export default () =>
   (<Wrapper>
     <Image
-      src="img/product-image-1@2x.png"
+      src={process.env.PUBLIC_URL + 'img/product-image-1@2x.png'}
       alt="Long Cotton Gabardine Car Coat"
     />
     <Image
-      src="img/product-image-2@2x.png"
+      src={process.env.PUBLIC_URL + 'img/product-image-2@2x.png'}
       alt="Long Cotton Gabardine Car Coat"
     />
     <Image
-      src="img/product-image-3@2x.png"
+      src={process.env.PUBLIC_URL + 'img/product-image-3@2x.png'}
       alt="Long Cotton Gabardine Car Coat"
     />
     <Image
-      src="img/product-image-4@2x.png"
+      src={process.env.PUBLIC_URL + 'img/product-image-4@2x.png'}
       alt="Long Cotton Gabardine Car Coat"
     />
   </Wrapper>);
