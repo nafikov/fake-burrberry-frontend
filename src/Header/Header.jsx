@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from './assets/logo.svg';
-import hamburger from './assets/hamburger.svg';
+import logo from '../assets/logo.svg';
+import hamburger from '../assets/hamburger.svg';
+import arrow from '../assets/arrow.svg';
+import Navigation from './Navigation';
 
 const Header = styled.header``;
 
@@ -55,6 +57,16 @@ const Country = styled.button`
   @media screen and (min-width: 992px) {
     top: 2rem;
   }
+  
+  ::after{
+    display: inline-block;    
+    width: 12px;
+    height: 6px;
+    margin-left: 0.5rem;
+    background: url(${arrow});
+    background-size: cover;
+    content: '';
+  }
 `;
 
 const Wrapper = styled.div`
@@ -72,5 +84,6 @@ export default () => (
         </a>
       </Wrapper>
     </div>
+    <Navigation />
   </Header>
 );

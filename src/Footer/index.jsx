@@ -32,6 +32,10 @@ const Wrapper = styled.div`
   }
 `;
 
+const BlackText = styled.span`
+  color: #171717;
+`;
+
 const Help = styled.h4`
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -92,12 +96,10 @@ export default () =>
     <Wrapper>
       <Navigation />
     </Wrapper>
-
     <div className="container">
-      <Button type="button">Shipping country: Russian Federation</Button>
-      <Button type="button">Language: English</Button>
+      <Button type="button">Shipping country: <BlackText>Russian Federation</BlackText></Button>
+      <Button type="button">Language: <BlackText>English</BlackText></Button>
     </div>
-
     <Help>Need help?</Help>
     <Contact href="/">Find out more and contact us</Contact>
   </Footer>);

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Showing from './Showing';
+import Showing from './More';
 import Header from './Header';
-import Nav from '../common/Nav';
 import List from './Cards';
 
 export default () =>
@@ -10,11 +9,9 @@ export default () =>
     <Helmet>
       <title>Men | Burberry</title>
     </Helmet>
-    <Nav />
     <Header
       title="Men's Clothing"
     />
     <List />
-
     <Showing />
   </main>);
