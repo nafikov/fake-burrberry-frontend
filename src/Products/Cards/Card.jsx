@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unused-prop-types */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import NumberFormat from 'react-number-format';
@@ -13,6 +14,12 @@ const Wrapper = styled.a`
   @media only screen and (min-width: 48rem) {
     margin-bottom: 2rem;
   }
+`;
+
+const LinkStyled = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  color: #171717;
 `;
 
 const Info = styled.h4`
@@ -42,7 +49,6 @@ const Like = styled.button`
 const Photo = styled.img`
   display: block;
   margin-bottom: 1rem;
-  min-width: 144px;
   width: 100%;
   height: auto;
 `;
@@ -57,6 +63,7 @@ const Name = styled.h3`
   color: #171717;
   
   @media only screen and (min-width: 768px) {
+    margin-right: 2.5rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -79,14 +86,19 @@ const Underline = styled.span`
 
 export default function Card(props) {
   return (
-    <Wrapper href={props.href}>
-      <Photo src={props.src} alt={props.name} />
+    <Wrapper>
+      <LinkStyled to="/catalog/men/coats/1">
+        <Photo src={props.src} alt={props.name} />
+      </LinkStyled>
+
       <Promo>
         <Info>{props.collection}</Info>
-        <Like />
+        <Like type="button" />
       </Promo>
 
-      <Name>{props.name}</Name>
+      <LinkStyled to="/catalog/men/coats/1">
+        <Name>{props.name}</Name>
+      </LinkStyled>
       <Info>Available in <Underline>{props.colors} colours</Underline></Info>
       <Price>
         <NumberFormat

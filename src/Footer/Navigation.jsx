@@ -29,7 +29,7 @@ const Photo = styled.img`
   height: auto;
 `;
 
-const Store = styled.a`
+const Stores = styled.a`
   font-size: 0.75rem;
   line-height: 1rem;
   font-family: Raleway, sans-serif;
@@ -85,7 +85,7 @@ export default () => (
               src="http://assets.burberry.com/is/image/Burberryltd/933f04c94a361dfd816c77528ec0e7286921051b.jpg"
               alt="Find a store"
             />
-            <Store href="#">Find a store</Store>
+            <Stores href="#">Find a store</Stores>
           </nav>
         </div>
       </Lg>

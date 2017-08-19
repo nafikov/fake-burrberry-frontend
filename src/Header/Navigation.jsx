@@ -1,7 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Link = styled.a`
+const LinkStyled = styled(NavLink)`
   padding: 1rem;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -24,10 +25,10 @@ const Wrapper = styled.div`
 
 export default () => (
   <Wrapper>
-    <Link href="#">WOMEN</Link>
-    <Link href="#" active>MEN</Link>
-    <Link href="#">CHILDREN</Link>
-    <Link href="#">BEAUTY</Link>
-    <Link href="#">EXPERIENCE</Link>
+    <LinkStyled to="/catalog/women/">WOMEN</LinkStyled>
+    <LinkStyled active to="/catalog/men/">MEN</LinkStyled>
+    <LinkStyled to="/catalog/children/">CHILDREN</LinkStyled>
+    <LinkStyled to="/catalog/beauty/">BEAUTY</LinkStyled>
+    <LinkStyled to="/catalog/experience/">EXPERIENCE</LinkStyled>
   </Wrapper>
 );
