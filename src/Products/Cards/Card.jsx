@@ -57,6 +57,7 @@ const Name = styled.h3`
   color: #171717;
   
   @media only screen and (min-width: 768px) {
+    margin-right: 2.5rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
   }

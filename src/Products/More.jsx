@@ -7,7 +7,6 @@ const Button = styled.button`
   padding: 1rem 2rem;
   border: 1px solid #171717;
   border-radius: 2px;
-  outline: none;
   background-color: transparent;
   font-family: Raleway, sans-serif;
   font-size: 0.75rem;
@@ -31,14 +30,22 @@ const Title = styled.h2`
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
+  
+  @media screen and (min-width: 992px) {
+    margin-top: 1rem;
+  }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 5rem;
+  
+  @media screen and (min-width: 992px) {
+    margin-top: 1rem;
+  }
 `;
 
 export default () => (

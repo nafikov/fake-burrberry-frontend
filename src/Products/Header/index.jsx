@@ -27,13 +27,20 @@ const Button = styled.button`
 
   @media screen and (min-width: 768px) {
     display: inline-block;
+    margin-left: 0.5rem;
     padding: 0;
+    vertical-align: top;
     font-family: Raleway, sans-serif;
     color: #171717;  
     background-color: transparent;
     border: none;
     outline: none;
     border-bottom: 1px solid #171717;
+  }
+  
+  @media screen and (min-width: 992px) {
+    margin-left: 0;
+    vertical-align: baseline;
   }
 `;
 

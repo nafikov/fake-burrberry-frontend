@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import Navigation from './Navigation';
 
 const Footer = styled.footer`
-  padding: 2rem 0.5rem;
-  padding-left: 0;
+  padding: 2rem 0;
   background-color: #f3f3f3;
   
   @media (min-width: 768px) {
