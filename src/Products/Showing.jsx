@@ -33,15 +33,15 @@ const Title = styled.h2`
   }
 `;
 
-const Wrapper1 = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 const Wrapper2 = styled.div`
   margin-top: 1rem;
   margin-bottom: 5rem;
   text-align: center;
+`;
+
+const Wrapper1 = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 export default () => (
