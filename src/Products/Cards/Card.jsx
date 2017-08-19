@@ -49,7 +49,6 @@ const Like = styled.button`
 const Photo = styled.img`
   display: block;
   margin-bottom: 1rem;
-  min-width: 144px;
   width: 100%;
   height: auto;
 `;

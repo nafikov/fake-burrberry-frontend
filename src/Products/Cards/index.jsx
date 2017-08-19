@@ -23,7 +23,7 @@ const heritageCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1295,
     collection: 'Relaxed fit',
-    colors: 4,
+    colors: 3,
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ const heritageCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1395,
     collection: 'Relaxed fit',
-    colors: 4,
+    colors: 3,
   },
   {
     id: 7,
@@ -83,7 +83,7 @@ const heritageCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1395,
     collection: 'Relaxed fit',
-    colors: 2,
+    colors: 3,
   },
 ];
 
@@ -96,7 +96,7 @@ const singleBreastCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1395,
     collection: 'Relaxed fit',
-    colors: 7,
+    colors: 3,
   },
   {
     id: 2,
@@ -106,7 +106,7 @@ const singleBreastCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1395,
     collection: 'Relaxed fit',
-    colors: 7,
+    colors: 3,
   },
   {
     id: 3,
@@ -116,7 +116,7 @@ const singleBreastCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1395,
     collection: 'Relaxed fit',
-    colors: 7,
+    colors: 3,
   },
   {
     id: 4,
@@ -126,7 +126,7 @@ const singleBreastCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1395,
     collection: 'Relaxed fit',
-    colors: 7,
+    colors: 3,
   },
   {
     id: 5,
@@ -146,7 +146,7 @@ const singleBreastCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1195,
     collection: 'Relaxed fit',
-    colors: 4,
+    colors: 3,
   },
   {
     id: 7,
@@ -166,7 +166,7 @@ const singleBreastCoats = [
     name: 'The Westminster – Long Heritage Trench Coat',
     price: 1195,
     collection: 'Relaxed fit',
-    colors: 2,
+    colors: 3,
   },
 ];
 
