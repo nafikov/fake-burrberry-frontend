@@ -174,6 +174,7 @@ const Wrapper = styled.div`
   margin-bottom: 1rem;
 
   @media screen and (min-width: 768px) {
+    padding-top: 1rem;
     margin-bottom: 2rem;
   }
 `;
@@ -189,10 +190,23 @@ const Header = styled.h2`
   color: #171717;
 
   @media screen and (min-width: 768px) {
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+`;
+
+const Line = styled(Hr)`
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0rem;
+  }
+  
+  @media screen and (min-width: 992px) {
+    margin-bottom: 1rem;
   }
 `;
 
@@ -214,7 +228,7 @@ export default () =>
           </div>),
         )}
       </div>
-      <Hr />
+      <Line />
 
       <Header>Single Breasted Trench Coats</Header>
       <div className="row">
