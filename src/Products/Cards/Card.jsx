@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import NumberFormat from 'react-number-format';
+import heart from '../../assets/heart.svg';
 
 const Wrapper = styled.a`
   margin-bottom: 2rem;
@@ -26,6 +27,16 @@ const Info = styled.h4`
 const Price = styled(Info)`
   margin-top: 0.25rem;
   margin-bottom: 0;
+`;
+
+const Like = styled.button`
+  display: inline-block;
+  content: '';
+  height: 14px;
+  width: 14px;
+  border: none;
+  background: url(${heart}) no-repeat;
+  background-position: center;
 `;
 
 const Photo = styled.img`
@@ -56,6 +67,11 @@ const Name = styled.h3`
   }
 `;
 
+const Promo = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 const Underline = styled.span`
   display: inline-block;
   border-bottom: 1px solid #171717;
@@ -65,7 +81,11 @@ export default function Card(props) {
   return (
     <Wrapper href={props.href}>
       <Photo src={props.src} alt={props.name} />
-      <Info>{props.collection}</Info>
+      <Promo>
+        <Info>{props.collection}</Info>
+        <Like />
+      </Promo>
+
       <Name>{props.name}</Name>
       <Info>Available in <Underline>{props.colors} colours</Underline></Info>
       <Price>
