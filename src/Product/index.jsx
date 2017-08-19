@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Product from './MainInfo/index';
 import Description from './Description';
 import Delivery from './Delivery';
@@ -8,10 +9,13 @@ import More from './More';
 import Gallery from './MainInfo/Gallery';
 import { Lg } from '../common/Responsive';
 import Nav from '../common/Nav';
-import MoreShowing from '../Products/ShowingStats';
+
 
 export default () =>
   (<main>
+    <Helmet>
+      <title>Long Cotton Gabardine Car Coat | Men - Burberry</title>
+    </Helmet>
     <Nav />
     <Product />
     <Description />
@@ -21,7 +25,4 @@ export default () =>
     <Delivery />
     <Recommend />
     <More />
-
-    <MoreShowing />
-
   </main>);
