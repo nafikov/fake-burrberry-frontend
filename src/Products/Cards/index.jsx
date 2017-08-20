@@ -14,6 +14,7 @@ const heritageCoats = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const heritageCoats = [
     price: 1295,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const heritageCoats = [
     price: 1295,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 4,
@@ -44,6 +47,7 @@ const heritageCoats = [
     price: 1195,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ const heritageCoats = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 6,
@@ -64,6 +69,7 @@ const heritageCoats = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 7,
@@ -74,6 +80,7 @@ const heritageCoats = [
     price: 1195,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 8,
@@ -84,6 +91,7 @@ const heritageCoats = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
 ];
 
@@ -97,6 +105,7 @@ const singleBreastCoats = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 2,
@@ -107,6 +116,7 @@ const singleBreastCoats = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 3,
@@ -117,6 +127,7 @@ const singleBreastCoats = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 4,
@@ -127,6 +138,7 @@ const singleBreastCoats = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 5,
@@ -137,6 +149,7 @@ const singleBreastCoats = [
     price: 1195,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 6,
@@ -147,6 +160,7 @@ const singleBreastCoats = [
     price: 1195,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 7,
@@ -157,6 +171,7 @@ const singleBreastCoats = [
     price: 1195,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 8,
@@ -167,6 +182,7 @@ const singleBreastCoats = [
     price: 1195,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
 ];
 
@@ -216,6 +232,7 @@ export default () =>
               price={product.price}
               collection={product.collection}
               colors={product.colors}
+              link={product.link}
             />
           </div>),
         )}
@@ -233,6 +250,7 @@ export default () =>
               price={product.price}
               collection={product.collection}
               colors={product.colors}
+              link={product.link}
             />
           </div>),
         )}

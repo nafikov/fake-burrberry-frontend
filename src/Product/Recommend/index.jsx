@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import styled from 'styled-components';
-import Card2 from '../../Products/Cards/Card';
+import Card from '../../Products/Cards/Card';
 
 const products = [
   {
@@ -12,6 +12,7 @@ const products = [
     price: 1395,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const products = [
     price: 1295,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const products = [
     price: 1295,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const products = [
     price: 1195,
     collection: 'Relaxed fit',
     colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
 ];
 
@@ -85,13 +89,14 @@ export default () =>
       <div className="row">
         {products.map((product, index) =>
           (<div className="col-xs-6 col-md-3" key={product.id}>
-            <Card2
+            <Card
               href={product.href}
               src={product.src}
               name={product.name}
               price={product.price}
               collection={product.collection}
               colors={product.colors}
+              link={product.link}
             />
           </div>),
         )}
