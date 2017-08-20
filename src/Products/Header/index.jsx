@@ -37,6 +37,11 @@ const Button = styled.button`
     outline: none;
     border-bottom: 1px solid #171717;
   }
+  
+  @media screen and (min-width: 992px) {
+    margin-left: 0;
+    vertical-align: baseline;
+  }
 `;
 
 const Description = styled.p`

@@ -8,15 +8,12 @@ import Recommend from './Recommend/index';
 import More from './More';
 import Gallery from './MainInfo/Gallery';
 import { Lg } from '../common/Responsive';
-import Nav from '../common/Nav';
-
 
 export default () =>
   (<main>
     <Helmet>
       <title>Long Cotton Gabardine Car Coat | Men - Burberry</title>
     </Helmet>
-    <Nav />
     <Product />
     <Description />
     <Lg>

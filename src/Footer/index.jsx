@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import Navigation from './Navigation';
 
 const Footer = styled.footer`
-  padding: 2rem 0.5rem;
-  padding-left: 0;
+  padding: 2rem 0;
   background-color: #f3f3f3;
   
   @media (min-width: 768px) {
@@ -30,6 +29,10 @@ const Wrapper = styled.div`
   @media screen and (min-width: 992px) {
     margin-bottom: 2.125rem;
   }
+`;
+
+const BlackText = styled.span`
+  color: #171717;
 `;
 
 const Help = styled.h4`
@@ -92,12 +95,10 @@ export default () =>
     <Wrapper>
       <Navigation />
     </Wrapper>
-
     <div className="container">
-      <Button type="button">Shipping country: Russian Federation</Button>
-      <Button type="button">Language: English</Button>
+      <Button type="button">Shipping country: <BlackText>Russian Federation</BlackText></Button>
+      <Button type="button">Language: <BlackText>English</BlackText></Button>
     </div>
-
     <Help>Need help?</Help>
     <Contact href="/">Find out more and contact us</Contact>
   </Footer>);

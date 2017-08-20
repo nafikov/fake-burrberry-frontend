@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Xs } from '../../common/Responsive';
 import arrow from '../../assets/arrow.svg';
 
 const Wrapper = styled.div`
@@ -57,18 +56,9 @@ const Sort = styled.div`
   }
 `;
 
-const Title = styled.div`
-  margin-right: 2rem;
-  padding: 1.5rem 0;
-  white-space: nowrap;
-`;
-
 export default () => (
   <Wrapper>
     <Filters>
-      <Xs>
-        <Title>Refine by</Title>
-      </Xs>
       <Filter>Category</Filter>
       <Filter>Colour</Filter>
       <Filter>Size</Filter>

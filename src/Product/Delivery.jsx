@@ -53,7 +53,7 @@ export default () =>
     <div className="container">
       <div className="row middle-lg">
         <div className="col-md-7 col-lg-7">
-          <Image src="img/delivery.png" alt="delivery-image" />
+          <Image src={`${process.env.PUBLIC_URL}/img/delivery.png`} alt="delivery-image" />
         </div>
         <div className="col-md-5 col-lg-offset-1 col-lg-4">
           <Header>DELIVERY</Header>
