@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Lg } from '../common/Responsive';
 
 const Title = styled.h2`
   margin: 0;
   margin-bottom: 1rem;
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 0.875rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #171717;
@@ -14,12 +15,28 @@ const Title = styled.h2`
 const Link = styled.a`
   display: block;
   margin-bottom: 0.75rem;
-  margin-right: 1.25rem;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 600;
   color: #999999;
   text-decoration: none;
+`;
+
+const Photo = styled.img`
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+`;
+
+const Stores = styled.a`
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: #171717;
+  text-decoration: none;
+  border-bottom: solid 1px #171717;
 `;
 
 export default () => (
@@ -60,6 +77,18 @@ export default () => (
           <Link>Japan Only - SCTL indications</Link>
         </nav>
       </div>
+
+      <Lg>
+        <div className="col-sm-3">
+          <nav>
+            <Photo
+              src="http://assets.burberry.com/is/image/Burberryltd/933f04c94a361dfd816c77528ec0e7286921051b.jpg"
+              alt="Find a store"
+            />
+            <Stores href="#">Find a store</Stores>
+          </nav>
+        </div>
+      </Lg>
     </div>
   </div>
 );

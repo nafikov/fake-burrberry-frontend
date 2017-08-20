@@ -1,36 +1,48 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import styled from 'styled-components';
-import Card from './Card';
+import Card from '../../Products/Cards/Card';
 
 const products = [
   {
     id: 1,
-    src: 'img/item-001.jpg',
+    src: 'https://assets.burberry.com/is/image/Burberryltd/3bbc6df8655e77f5a75880f03c3ab3f7c92d2ee9.jpg?$BBY_V2_ML_3X4$&hei=720&wid=540',
     href: '#',
     name: 'Emroided Hooded',
-    price: 27000,
+    price: 1395,
+    collection: 'Relaxed fit',
+    colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 2,
-    src: 'img/item-002.jpg',
+    src: 'https://assets.burberry.com/is/image/Burberryltd/b340592f566593645f37fd61fdafe720e2c224b7.jpg?$BBY_V2_ML_3X4$&hei=720&wid=540',
     href: '#',
     name: 'Relaxed Fit Stretch Jeans',
-    price: 22500,
+    price: 1295,
+    collection: 'Relaxed fit',
+    colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 3,
-    src: 'img/item-003.jpg',
+    src: 'https://assets.burberry.com/is/image/Burberryltd/3bbc6df8655e77f5a75880f03c3ab3f7c92d2ee9.jpg?$BBY_V2_ML_3X4$&hei=720&wid=540',
     href: '#',
     name: 'Leather and House Check',
-    price: 120000,
+    price: 1295,
+    collection: 'Relaxed fit',
+    colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
   {
     id: 4,
-    src: 'img/item-004.jpg',
+    src: 'https://assets.burberry.com/is/image/Burberryltd/3bbc6df8655e77f5a75880f03c3ab3f7c92d2ee9.jpg?$BBY_V2_ML_3X4$&hei=720&wid=540',
     href: '#',
     name: 'Leather Wingtip Check',
-    price: 46000,
+    price: 1195,
+    collection: 'Relaxed fit',
+    colors: 3,
+    link: '/catalog/men/coats/westminster–long-heritage-trench-coat',
   },
 ];
 
@@ -78,9 +90,13 @@ export default () =>
         {products.map((product, index) =>
           (<div className="col-xs-6 col-md-3" key={product.id}>
             <Card
+              href={product.href}
               src={product.src}
               name={product.name}
               price={product.price}
+              collection={product.collection}
+              colors={product.colors}
+              link={product.link}
             />
           </div>),
         )}

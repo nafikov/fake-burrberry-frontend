@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Product from './MainInfo/index';
 import Description from './Description';
 import Delivery from './Delivery';
@@ -10,6 +11,9 @@ import { Lg } from '../common/Responsive';
 
 export default () =>
   (<main>
+    <Helmet>
+      <title>Long Cotton Gabardine Car Coat | Men - Burberry</title>
+    </Helmet>
     <Product />
     <Description />
     <Lg>
