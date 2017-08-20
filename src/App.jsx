@@ -1,10 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Header from './Header/Header';
-import Footer from './Footer/index';
-import Product from './Product/index';
-import Products from './Products/index';
+import Header from './Header';
+import Footer from './Footer';
+import Product from './Product';
+import Products from './Products';
 
 export default function App() {
   return (
