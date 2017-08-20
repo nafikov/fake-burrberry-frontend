@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable prefer-template */
 import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
@@ -35,7 +34,7 @@ export default () =>
           </XsMd>
 
           <Lg>
-            <MainImage src={process.env.PUBLIC_URL + '/img/product-image-1@2x.png'} alt="Product Image" />
+            <MainImage src={`${process.env.PUBLIC_URL}/img/product-image-1@2x.png`} alt="Product Image" />
           </Lg>
         </div>
         <div className="col-xs-12 col-md-5 col-lg-6">
