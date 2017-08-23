@@ -18,3 +18,12 @@ export const XsMd = ({ children }) =>
 XsMd.propTypes = {
   children: PropTypes.string.isRequired,
 };
+
+export const Xs = ({ children }) =>
+  (<Responsive maxWidth={767}>
+    {children}
+  </Responsive>);
+
+Xs.propTypes = {
+  children: PropTypes.string.isRequired,
+};
