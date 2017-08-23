@@ -232,7 +232,7 @@ export default () =>
               price={product.price}
               collection={product.collection}
               colors={product.colors}
-              link={product.link}
+              to={product.link}
             />
           </div>),
         )}
@@ -250,7 +250,7 @@ export default () =>
               price={product.price}
               collection={product.collection}
               colors={product.colors}
-              link={product.link}
+              to={product.link}
             />
           </div>),
         )}

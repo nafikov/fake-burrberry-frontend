@@ -87,7 +87,7 @@ const Underline = styled.span`
 export default function Card(props) {
   return (
     <Wrapper>
-      <LinkStyled to={props.link}>
+      <LinkStyled to={props.to}>
         <Photo src={props.src} alt={props.name} />
       </LinkStyled>
 
@@ -120,6 +120,6 @@ Card.propTypes = {
   name: PropTypes.string.isRequired,
   colors: PropTypes.string.isRequired,
   collection: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
 };
