@@ -32,6 +32,12 @@ const Feature = styled.div`
   display: block;
 `;
 
+const Description = styled.div`
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #171717;
+`;
+
 const Title = styled.h3`
   margin: 0;
   padding: 0;
@@ -39,12 +45,6 @@ const Title = styled.h3`
   font-weight: bold;
   font-size: 0.75rem;
   line-height: 0.875rem;
-  color: #171717;
-`;
-
-const Description = styled.div`
-  font-size: 0.75rem;
-  line-height: 1rem;
   color: #171717;
 `;
 
