@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import Button from '../../common/Button';
 import ButtonColor from './ButtonColor';
@@ -7,7 +7,7 @@ import Info from './Info';
 import Size from './SelectSize';
 import Help from './Help';
 
-const Details = styled.div`
+const Wrapper = styled.div`
   padding: 1rem 1rem 0rem 1rem;
 
   @media screen and (min-width: 768px) {
@@ -75,51 +75,85 @@ const Description = styled.div`
   color: #171717;
 `;
 
-export default () =>
-  (<Details>
-    <Info />
+const colors = [
+  {
+    name: 'Honey',
+    color: '#cfa880',
+  },
+  {
+    name: 'Black',
+    color: '#000',
+  },
+];
 
-    <Select>
-      <ColumnWrapper>
-        <Color>
-          Colour: <ColorValue>Honey</ColorValue>
-        </Color>
-        <ColorPicker>
-          <ButtonColor color="#232122">color: Black</ButtonColor>
-          <ButtonColor color="#cfa880" active>
-            color: Honey
-          </ButtonColor>
-        </ColorPicker>
+class Details extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeColor: 0,
+    };
+  }
+
+  selectColor(color) {
+    this.setState({
+      activeColor: color,
+    });
+  }
+
+  render() {
+    return (
+      <Wrapper>
+        <Info />
+
+        <Select>
+          <ColumnWrapper>
+            <Color>
+              Colour: <ColorValue>{this.state.activeColor.name}</ColorValue>
+            </Color>
+            <ColorPicker>
+              {colors.map(entry =>
+                (<ButtonColor
+                  color={entry.color}
+                  onClick={() => this.selectColor(entry)}
+                  active={this.state.activeColor === entry}
+                />),
+              )}
+            </ColorPicker>
+            <Lg>
+              <Button type="button" primary>
+                ADD TO BAG
+              </Button>
+            </Lg>
+          </ColumnWrapper>
+          <Lg>
+            <Size />
+          </Lg>
+        </Select>
+
         <Lg>
-          <Button type="button" primary>
-            ADD TO BAG
-          </Button>
+          <DeliveryInfo>
+            <Title>Free Next Day Delivery</Title>
+            <Description>
+              Order before 7pm Monday to Thursday for delivery the next day
+            </Description>
+          </DeliveryInfo>
         </Lg>
-      </ColumnWrapper>
-      <Lg>
-        <Size />
-      </Lg>
-    </Select>
 
-    <Lg>
-      <DeliveryInfo>
-        <Title>Free Next Day Delivery</Title>
-        <Description>
-          Order before 7pm Monday to Thursday for delivery the next day
-        </Description>
-      </DeliveryInfo>
-    </Lg>
+        <XsMd>
+          <ActionWrapper>
+            <Button type="button" primary>
+              SELECT A SIZE
+            </Button>
+            <Button type="button">FIND IN STORE</Button>
+          </ActionWrapper>
+        </XsMd>
 
-    <XsMd>
-      <ActionWrapper>
-        <Button type="button" primary>
-          SELECT A SIZE
-        </Button>
-        <Button type="button">FIND IN STORE</Button>
-      </ActionWrapper>
-    </XsMd>
+        <XsMd>
+          <Help />
+        </XsMd>
+      </Wrapper>
+    );
+  }
+}
 
-    <XsMd>
-      <Help />
-    </XsMd>
-  </Details>);
+export default Details;
