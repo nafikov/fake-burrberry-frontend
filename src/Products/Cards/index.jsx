@@ -233,6 +233,7 @@ export default () =>
               collection={product.collection}
               colors={product.colors}
               to={product.link}
+              fav={false}
             />
           </div>),
         )}
@@ -251,6 +252,7 @@ export default () =>
               collection={product.collection}
               colors={product.colors}
               to={product.link}
+              fav={false}
             />
           </div>),
         )}

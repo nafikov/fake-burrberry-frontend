@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import NumberFormat from 'react-number-format';
-import heart from '../../assets/heart.svg';
+import Like from './Favorite';
 
 const Wrapper = styled.a`
   margin-bottom: 2rem;
@@ -34,16 +34,6 @@ const Info = styled.h4`
 const Price = styled(Info)`
   margin-top: 0.25rem;
   margin-bottom: 0;
-`;
-
-const Like = styled.button`
-  display: inline-block;
-  content: '';
-  height: 14px;
-  width: 14px;
-  border: none;
-  background: url(${heart}) no-repeat;
-  background-position: center;
 `;
 
 const Photo = styled.img`
@@ -93,7 +83,7 @@ export default function Card(props) {
 
       <Promo>
         <Info>{props.collection}</Info>
-        <Like type="button" />
+        <Like isFavorite={props.fav} />
       </Promo>
 
       <LinkStyled to="/catalog/men/coats/1">
@@ -122,4 +112,5 @@ Card.propTypes = {
   collection: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
+  fav: PropTypes.bool.isRequired,
 };
