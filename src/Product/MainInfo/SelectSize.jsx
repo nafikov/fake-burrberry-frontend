@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import Help from './Help';
 import Button from '../../common/Button';
+
+const sizes = ['S', 'M', 'L', 'XL'];
 
 const Wrapper = styled.div`
   padding: 0;
@@ -46,23 +48,46 @@ const Option = styled.button`
   }
 `;
 
-export default () =>
-  (<Wrapper>
-    <Value>
-      <Text>
-        Size: <SizeValue>XL</SizeValue>
-      </Text>
-      <Help />
-    </Value>
+class SelectSize extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      size: 'XL'
+    };
+  }
 
-    <Options>
-      <Option type="button">S</Option>
-      <Option type="button">M</Option>
-      <Option type="button">L</Option>
-      <Option type="button" active>
-        XL
-      </Option>
-    </Options>
+  handleSelect(newSize) {
+    this.setState({
+      size: newSize
+    });
+  };
 
-    <Button type="button">FIND IN STORE</Button>
-  </Wrapper>);
+  render() {
+    return (
+      <Wrapper>
+        <Value>
+          <Text>
+            Size: <SizeValue>{this.state.size}</SizeValue>
+          </Text>
+          <Help />
+        </Value>
+
+        <Options>
+          {sizes.map((sizeValue) =>
+              (<Option
+                key={sizeValue}
+                onClick={() => this.handleSelect(sizeValue)}
+                active={this.state.size === sizeValue}
+              >
+                {sizeValue}
+              </Option>),
+          )}
+        </Options>
+
+        <Button type="button">FIND IN STORE</Button>
+      </Wrapper>
+    )
+  }
+}
+
+export default SelectSize;
