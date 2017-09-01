@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Header from './Header';
+import Header from './Header/index';
 import Footer from './Footer';
 import Product from './Product';
 import Products from './Products';

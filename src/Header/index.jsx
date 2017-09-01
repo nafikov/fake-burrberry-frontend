@@ -69,6 +69,21 @@ const Country = styled.button`
   }
 `;
 
+const CountrySelect = styled.select`
+  margin-left: 0.5rem;
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: #999;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+`;
+
 const Wrapper = styled.div`
   position: relative;
 `;
@@ -78,7 +93,14 @@ export default () => (
     <div className="container">
       <Wrapper>
         <Hamburger src={hamburger} />
-        <Country>Shopping in: United Kingdom (&#163;)</Country>
+        <Country>
+          Shopping in:
+          <CountrySelect>
+            <option> Russian Federation (₽)</option>
+            <option> United Kingdom (£)</option>
+            <option> United States ($)</option>
+          </CountrySelect>
+        </Country>
         <a href="/">
           <Logo src={logo} />
         </a>
